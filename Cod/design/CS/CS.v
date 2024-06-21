@@ -1,10 +1,10 @@
-`timescale 1 ns/1 ns
+
 
 module CS
 #(`include "../PARAM/LM_params.v")
 (
 input clk,
-input rst,
+input rst_n,
 
 input btnHS,
 input btnVS,
@@ -41,11 +41,11 @@ wire [2:0]c_ready;
 wire [13:0]c_data;
 wire [3:0]c_addr;
 
-CD cd(.clk(clk), .rst(rst), .clkinVGA(clk_VGA),
+CD cd(.clk(clk), .rst_n(rst_n), .clkinVGA(clk_VGA),
 					.c_valid(c_valid), .c_addr(c_addr), .c_data(c_data[7:0]), .c_ready(c_ready[2]), 
 					.clk_VGA(clk_VGA), .clk_UART(clk_UART), .clk_LM(clk_LM), .clk_DB(clk_DB));	
 
-DB db(.clk(clk_DB), .rst(rst),
+DB db(.clk(clk_DB), .rst_n(rst_n),
   .btnHS(btnHS), .HS(button_signal_HS), 
 	.btnVS(btnVS), .VS(button_signal_VS), 
 	.btnDF_UART(btnUART), .DF_UART(button_signal_DEBUG_UART), 
@@ -59,7 +59,7 @@ wire UART_valid_error;
 wire [7:0]UART_out;		
 wire UART_valid_out;
 					
-UART uart(.clk(clk_UART), .rst(rst),
+UART uart(.clk(clk_UART), .rst_n(rst_n),
   .in(in), .clkinVGA(clk_VGA),
 	.c_valid(c_valid), .c_addr(c_addr), .c_data(c_data[7:0]), .c_ready(c_ready[1]),
 	.error(UART_error), .valid_error(UART_valid_error),
@@ -70,7 +70,7 @@ wire [7:0]UART_out_CM_data;
 wire UART_out_CM_data_empty;
 
 Sync_Reg #(.SIZE(8)) FIFO_UART_CM(
-  .w_clk(clk_UART), .r_clk(clk_LM), .rst(rst), 
+  .w_clk(clk_UART), .r_clk(clk_LM), .rst_n(rst_n), 
   .w_data(UART_out), .w_en(UART_valid_out & ~button_signal_DEBUG_UART), 
   .r_data(UART_out_CM_data), .r_empty(UART_out_CM_data_empty));	
   
@@ -83,12 +83,12 @@ wire [3:0] VGA_Notification;
 wire VGA_Notification_Valid;
 wire [11:0] Data_VGA;
 
-Color_Manager cm  (.Clk(clk), .Rst(rst),
+CM cm  (.clk(clk), .rst_n(rst_n),
 		.Empty(UART_out_CM_data_empty), .RXD_Data(UART_out_CM_data),
-		.C_Rdy(&c_ready), .C_Addr(c_addr),
-		.C_Data(c_data), .C_Valid(c_valid),
+		.c_ready(&c_ready), .c_addr(c_addr),
+		.c_data(c_data), .c_valid(c_valid),
 		.Vertical_Split(button_signal_VS), .Horizontal_Split(button_signal_HS),
-	  .VGA_Debugg(button_signal_DEBUG_VGA),
+	  .VGA_debug(button_signal_DEBUG_VGA),
 		.HSync(HSYNC), .VSync(VSYNC),
 		.Config_Status(config_status),
 		.Config_Notification(Config_Notification), .Config_Notification_Valid(Config_Notification_Valid),
@@ -96,11 +96,11 @@ Color_Manager cm  (.Clk(clk), .Rst(rst),
 		.VGA_Notification(VGA_Notification), .VGA_Notification_Valid(VGA_Notification_Valid),
 	  .Data_VGA(Data_VGA));
 
-VGA_Control vga(.Clk(clk), .Rst(rst),
-  .Data_in(Data_VGA),
-	.C_valid(c_valid), .C_addr(c_addr[3:2]), 
-	.C_data(c_data[1:0]), .C_rdy(c_ready[0]),
-	.Red(RED), .Green(GREEN), .Blue(BLUE), 
+VGA vga(.clk(clk), .rst_n(rst_n),
+  .data_in(Data_VGA),
+	.c_valid(c_valid), .c_addr(c_addr[3:2]), 
+	.c_data(c_data[1:0]), .c_ready(c_ready[0]),
+	.RED(RED), .GREEN(GREEN), .BLUE(BLUE), 
 	.HSync(HSYNC), .VSync(VSYNC));
 		
 
@@ -115,22 +115,22 @@ wire VGA_error_empty;
 wire [3:0]VGA_error_data;
 		
 Sync_Reg #(.SIZE(8)) FIFO_UART_info(
-  .w_clk(clk_UART), .r_clk(clk_LM), .rst(rst), 
+  .w_clk(clk_UART), .r_clk(clk_LM), .rst_n(rst_n), 
   .w_data(UART_out), .w_en(UART_valid_out & button_signal_DEBUG_UART), 
   .r_data(UART_out_data), .r_empty(UART_info_empty));	
   	
 Sync_Reg #(.SIZE(2)) FIFO_UART_error(
-  .w_clk(clk_UART), .r_clk(clk_LM), .rst(rst), 
+  .w_clk(clk_UART), .r_clk(clk_LM), .rst_n(rst_n), 
   .w_data(UART_error), .w_en(UART_valid_error), 
   .r_data(UART_error_data), .r_empty(UART_error_empty));
   		
 Sync_Reg #(.SIZE(4)) FIFO_CM_error(
-  .w_clk(clk_VGA), .r_clk(clk_LM), .rst(rst), 
+  .w_clk(clk_VGA), .r_clk(clk_LM), .rst_n(rst_n), 
   .w_data((VGA_Notification_Valid) ? (VGA_Notification) : ((Error_Valid) ? (Config_Error) : ((Config_Notification_Valid) ? (Config_Notification) : 4'b0000))), .w_en((Config_Notification_Valid | Error_Valid | VGA_Notification_Valid) & ~button_signal_DEBUG_UART), 
   .r_data(VGA_error_data), .r_empty(VGA_error_empty));
 
 LM lm(
-  .clk(clk_LM), .rst(rst),
+  .clk(clk_LM), .rst_n(rst_n),
   .UART_data_debug_switch(button_signal_DEBUG_UART), 
   .UART_data(UART_out_data), .UART_data_valid(UART_info_empty),
   .CM_errors(VGA_error_data), .CM_errors_valid(VGA_error_empty),

@@ -1,7 +1,7 @@
-`timescale 1 ns/1 ns
+
 
 module tb_CS;
-	reg clk, rst;
+	reg clk, rst_n;
 	reg in;
 	reg btnHS;
 	reg btnVS;
@@ -13,7 +13,7 @@ module tb_CS;
 	wire [15:0]LEDS;
 	
 	 
-	CS cs(.clk(clk), .rst(rst),
+	CS cs(.clk(clk), .rst_n(rst_n),
 				.in(in), 
 				.btnHS(btnHS), .btnVS(btnVS), 
 				.btnUART(btnUART), .btnVGA(btnVGA), 
@@ -93,11 +93,11 @@ module tb_CS;
 	endtask
 	
 	initial begin
-		rst = 1'b0;
+		rst_n = 1'b1;
 		#200;
-		rst = 1'b1;
+		rst_n = 1'b0;
 		#1000;
-		rst = 1'b0;
+		rst_n = 1'b1;
 	end
 
 	initial begin

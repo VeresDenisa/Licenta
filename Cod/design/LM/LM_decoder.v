@@ -6,14 +6,14 @@ This module receives errors/data/actualization from other modules and represents
 them on the board's LEDS.
 */
 
-`timescale 1 ns/1 ns
+
 
 module LM_decoder
   #(`include "../PARAM/LM_params.v", 
   parameter WIDTH = WIDTH_LEDS)
 (
 input clk,
-input rst,
+input rst_n,
 
 input [WIDTH-1:0] rd_data,
 input             fifo_empty,
@@ -23,8 +23,8 @@ output [WIDTH-1:0]leds
 
 reg [WIDTH-1:0]leds_reg, leds_next;
 
-always @(posedge clk or posedge rst) begin
-	if(rst) begin
+always @(posedge clk or negedge rst_n) begin
+	if(~rst_n) begin
 	  leds_reg <= 'd0;
 	end	else begin
 	  leds_reg <= leds_next;

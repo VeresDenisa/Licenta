@@ -1,0 +1,652 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/modelsim/modelsim_ase/win32aloem
+vCD
+Z0 !s110 1718689663
+!i10b 1
+!s100 @4@YZE3o3YNQSRI26>B?k3
+I1IWJdT73^:<10SVCa=i9C1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/Denisa/Desktop/GITHUB/Incercari/Cod/simulation/modelsim
+w1718689008
+8CD.v
+FCD.v
+Z3 FCD_params.v
+Z4 FCLK_values.v
+Z5 L0 15
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1718689663.000000
+Z8 !s107 CLK_values.v|CD_params.v|VGA_Addr_Parameters.v|VGA_Parameters.v|VGA_Width_Parameters.v|CS_errors.v|CS_params.v|UART_params.v|LM_params.v|CM_Addr_Parameters.v|CM_Parameters.v|CM_Width_Parameters.v|VGA_Control_tb.v|tb_UART.v|tb_Sync_Reg.v|tb_LM.v|tb_DB.v|tb_CS.v|tb_CD.v|CM_tb.v|CD_counter.v|CD_config.v|CD.v|VGA_Counter.v|VGA.v|VGA_Config.v|VGA_Assign_color.v|UART_state.v|UART_sampler.v|UART_config.v|UART.v|Sync_Reg.v|LM_decoder.v|LM.v|DB_debouncer.v|DB.v|CS.v|CM_Counter.v|CM_Config_Manager.v|CM_Assign_Data.v|CM.v|
+Z9 !s90 -reportprogress|300|-f|files.f|
+!i113 1
+Z10 tCvgOpt 0
+n@c@d
+vCD_config
+R0
+!i10b 1
+!s100 5YM<Mkg;2ij38[[Qn_D`K0
+I17de1Wib<Hcb<R@VVzXeL1
+R1
+R2
+Z11 w1718655773
+8CD_config.v
+FCD_config.v
+R3
+Z12 FCS_params.v
+R4
+Z13 L0 13
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+n@c@d_config
+vCD_counter
+R0
+!i10b 1
+!s100 O^6ngeV6EZ1zg:;432PBA3
+I>C7dCiLBQbo9ABchbEKbC0
+R1
+R2
+R11
+8CD_counter.v
+FCD_counter.v
+R3
+Z14 L0 10
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+n@c@d_counter
+vCM
+R0
+!i10b 1
+!s100 `?1Pj90VcF=5M]kJfmCem1
+IL0KjVMF^Sz`XaNCAKSo?i3
+R1
+R2
+R11
+8CM.v
+FCM.v
+Z15 FCM_Width_Parameters.v
+L0 2
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+n@c@m
+vCM_Assign_Data
+R0
+!i10b 1
+!s100 OD8XQnTU^dIJSS_VDC[o51
+I64F9l`QkF41zKVCFzefWz2
+R1
+R2
+R11
+8CM_Assign_Data.v
+FCM_Assign_Data.v
+R15
+Z16 FCM_Parameters.v
+Z17 FCM_Addr_Parameters.v
+L0 4
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+n@c@m_@assign_@data
+vCM_Config_Manager
+R0
+!i10b 1
+!s100 E[XZoPnLTLnGP;<Tedk:@2
+Iji3f22<0P^z1U@6k@I2aZ0
+R1
+R2
+R11
+8CM_Config_Manager.v
+FCM_Config_Manager.v
+R15
+R17
+R16
+L0 3
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+n@c@m_@config_@manager
+vCM_Counter
+R0
+!i10b 1
+!s100 NcKoAbVDLX74@H^WSCO3X1
+INnk2I1>ic21GXKfY>@oIE0
+R1
+R2
+R11
+8CM_Counter.v
+FCM_Counter.v
+R15
+L0 3
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+n@c@m_@counter
+vCM_tb
+R0
+!i10b 1
+!s100 9MYe`H:UGnR`[PBz=G[>c1
+I5M`Pl6?nQ6eJ?^zjF`a@D2
+R1
+R2
+Z18 w1718689384
+8CM_tb.v
+FCM_tb.v
+R15
+L0 3
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+n@c@m_tb
+vCS
+R0
+!i10b 1
+!s100 G<GmeL=aJ[m3e^D;8Wn?S0
+IH`;L0^H_BCSohL6Mkk<[e2
+R1
+R2
+R11
+8CS.v
+FCS.v
+Z19 FLM_params.v
+L0 3
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+n@c@s
+vDB
+R0
+!i10b 1
+!s100 Jd7>NoE>ZbmL7nGZM7:BA2
+IRIQHn86eLen=O0dJ7>ndE1
+R1
+R2
+Z20 w1718478560
+8DB.v
+FDB.v
+L0 3
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+n@d@b
+vDB_debouncer
+R0
+!i10b 1
+!s100 @nU@UU7c^@M]@a8W3HhQ_1
+ImX;zO=Uoj=O>2VoHZCD`k3
+R1
+R2
+w1718478583
+8DB_debouncer.v
+FDB_debouncer.v
+L0 3
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+n@d@b_debouncer
+vLM
+R0
+!i10b 1
+!s100 J@aXOzjk8;?6;38a5Fdz93
+IJUXb<`[a<ELD_?il<dZQ_1
+R1
+R2
+R11
+8LM.v
+FLM.v
+R19
+R14
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+n@l@m
+vLM_decoder
+R0
+!i10b 1
+!s100 33H=g`T7IH_a1DQ0IGVDo1
+IlRh84IDUEco<X]I0Qjb=52
+R1
+R2
+R11
+8LM_decoder.v
+FLM_decoder.v
+R19
+Z21 L0 11
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+n@l@m_decoder
+vSync_Reg
+R0
+!i10b 1
+!s100 L[cmg2Lc<[MoIf1fJ8a@R1
+I_Ui;19CQeNO`;Y7TCUHcg3
+R1
+R2
+w1718478631
+8Sync_Reg.v
+FSync_Reg.v
+L0 3
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+n@sync_@reg
+vtb_CD
+R0
+!i10b 1
+!s100 [a`gA_ofF4n17MB=27gk@3
+I7Of5PAH>:@<hIVVf_f_cQ1
+R1
+R2
+w1718689202
+8tb_CD.v
+Ftb_CD.v
+L0 3
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+ntb_@c@d
+vtb_CS
+R0
+!i10b 1
+!s100 z5<fNLD0Rd6IFJME_I8A@1
+IbKJii:17l6326gSSM]Ch71
+R1
+R2
+w1718688374
+8tb_CS.v
+Ftb_CS.v
+L0 3
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+ntb_@c@s
+vtb_DB
+R0
+!i10b 1
+!s100 d:2fP:j?bbP=ZD9N@NP`M3
+IC@OW>JF4a0^Cl:HQQl8zQ3
+R1
+R2
+w1718689207
+8tb_DB.v
+Ftb_DB.v
+L0 3
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+ntb_@d@b
+vtb_LM
+R0
+!i10b 1
+!s100 VMMiH5mgChbdDi=K[_UH_2
+IUcE[JYZzhRzhbLnWK^>>U2
+R1
+R2
+w1718689232
+8tb_LM.v
+Ftb_LM.v
+L0 3
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+ntb_@l@m
+vtb_Sync_Reg
+R0
+!i10b 1
+!s100 manJ5e=lM:Qd2A=k7`oM?1
+I56Yi0GNkY^53Hi4[@]I^B2
+R1
+R2
+R20
+8tb_Sync_Reg.v
+Ftb_Sync_Reg.v
+L0 3
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+ntb_@sync_@reg
+vtb_UART
+R0
+!i10b 1
+!s100 UZGM4bJHgg<8Z8PIdaocG2
+I>ii:0YoZ1lN728kYKPnUB2
+R1
+R2
+w1718689641
+8tb_UART.v
+Ftb_UART.v
+L0 3
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+ntb_@u@a@r@t
+vUART
+R0
+!i10b 1
+!s100 `j:O;BcL0o9?zS9;FK^Xz0
+Ie[6LT5jAeaS^zgWii5iAh1
+R1
+R2
+w1718689602
+8UART.v
+FUART.v
+Z22 FUART_params.v
+R12
+R13
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+n@u@a@r@t
+vUART_config
+R0
+!i10b 1
+!s100 eM1NAdUWno8829ZQ[gBg93
+I:IHJ07Vf57360UN[gkSa<3
+R1
+R2
+R11
+8UART_config.v
+FUART_config.v
+R22
+R12
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+n@u@a@r@t_config
+vUART_sampler
+R0
+!i10b 1
+!s100 0e6_bk@AE@SLWU4fVzCjT3
+IlN<ToKG6dkV1diMSohA3>1
+R1
+R2
+R11
+8UART_sampler.v
+FUART_sampler.v
+R22
+R21
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+n@u@a@r@t_sampler
+vUART_state
+R0
+!i10b 1
+!s100 _<ZdIAEIK_^kbBS0;VZSS2
+I3gmB5^o@[8O3jQJCXQ>Y]1
+R1
+R2
+R11
+8UART_state.v
+FUART_state.v
+R22
+R12
+FCS_errors.v
+L0 25
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+n@u@a@r@t_state
+vVGA
+R0
+!i10b 1
+!s100 0U<YgQl3O1>ijD^:jI1bk1
+IXZWWe_>l>SMECn^KbTNKN2
+R1
+R2
+R11
+8VGA.v
+FVGA.v
+Z23 FVGA_Width_Parameters.v
+L0 12
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+n@v@g@a
+vVGA_Assign_color
+R0
+!i10b 1
+!s100 aAXQ1]KeSRZK91ah8[n6S2
+IKSK[RNEa5?fn]:3a]C6=b3
+R1
+R2
+R11
+8VGA_Assign_color.v
+FVGA_Assign_color.v
+R23
+L0 8
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+n@v@g@a_@assign_color
+vVGA_Config
+R0
+!i10b 1
+!s100 g@iil4D8AfIgKfXD<QD;V1
+I@IjGTR3;B^nc1Hf2QN5FC3
+R1
+R2
+R11
+8VGA_Config.v
+FVGA_Config.v
+R23
+FVGA_Parameters.v
+FVGA_Addr_Parameters.v
+L0 21
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+n@v@g@a_@config
+vVGA_Counter
+R0
+!i10b 1
+!s100 BfSVhGYCTogTAMRRF4kb73
+I7NE4F8Xfe;nW9CdHiU3B[3
+R1
+R2
+R11
+8VGA_Counter.v
+FVGA_Counter.v
+R23
+R21
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+n@v@g@a_@counter
+vVGA_tb
+R0
+!i10b 1
+!s100 6jzROo2ja;aO3g2oKHzKR3
+I_bLCi2zJWY<9?;oibJaD<3
+R1
+R2
+R18
+8VGA_Control_tb.v
+FVGA_Control_tb.v
+R23
+L0 3
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+n@v@g@a_tb

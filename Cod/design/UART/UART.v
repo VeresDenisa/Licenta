@@ -8,13 +8,13 @@ The module is formed by:
 *///--------------------------------------------------------------------------------------------------
 
 
-`timescale 1 ns/1 ns
+
 
 module UART
 #(`include "../PARAM/UART_params.v")
 ( 
 input clk,
-input rst,
+input rst_n,
 
 input clkinVGA,
 
@@ -40,17 +40,17 @@ wire stopbit;
 wire data;
 wire valid_data;
 
-UART_config UART_CONFIG(.clk(clkinVGA), .rst(rst),
+UART_config UART_CONFIG(.clk(clkinVGA), .rst_n(rst_n),
 					.c_valid(c_valid), .c_addr(c_addr),
 					.c_data(c_data), .c_ready(c_ready),
 					.parity_bit_config(paritybit), .stop_bit_config(stopbit));	
 
-UART_state UART_STATE(.clk(clk), .rst(rst|~c_ready),
+UART_state UART_STATE(.clk(clk), .rst_n(rst_n&c_ready),
 					.data(data), .valid_data(valid_data),
 					.error(error), .valid_error(valid_error),
 					.out(out), .valid_out(valid_out),
 					.parity_bit_config(paritybit), .stop_bit_config(stopbit));	
 					
-UART_sampler SAMPLER(.clk(clk), .rst(rst), .in(in),
+UART_sampler SAMPLER(.clk(clk), .rst_n(rst_n), .in(in),
 	        .stop(valid_out|valid_error), .out(data), .valid(valid_data));
 endmodule

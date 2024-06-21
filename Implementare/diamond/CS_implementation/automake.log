@@ -1,0 +1,1999 @@
+
+synthesis -f "CS_project_CS_implementation_lattice.synproj"
+synthesis:  version Diamond (64-bit) 3.13.0.56.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+Fri Jun 21 03:27:57 2024
+
+
+Command Line:  synthesis -f CS_project_CS_implementation_lattice.synproj -gui -msgset C:/Users/Denisa/Desktop/GITHUB/Incercari/Implementare/diamond/promote.xml 
+
+    <postMsg mid="35002000" type="Info"    dynamic="0" navigation="0"  />
+Synthesis options:
+The -a option is MachXO3D.
+The -s option is 5.
+The -t option is CABGA256.
+The -d option is LCMXO3D-9400HC.
+Using package CABGA256.
+Using performance grade 5.
+                                                          
+
+##########################################################
+
+### Lattice Family : MachXO3D
+
+### Device  : LCMXO3D-9400HC
+
+### Package : CABGA256
+
+### Speed   : 5
+
+##########################################################
+
+                                                          
+
+    <postMsg mid="35001781" type="Info"    dynamic="0" navigation="0"  />
+Optimization goal = Balanced
+Top-level module name = CS.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p C:/Users/Denisa/Desktop/GITHUB/Incercari/Implementare/diamond (searchpath added)
+-p D:/diamond/diamond/3.13/ispfpga/se5c00/data (searchpath added)
+-p C:/Users/Denisa/Desktop/GITHUB/Incercari/Implementare/diamond/CS_implementation (searchpath added)
+-p C:/Users/Denisa/Desktop/GITHUB/Incercari/Implementare/diamond (searchpath added)
+Verilog design file = C:/Users/Denisa/Desktop/GITHUB/Incercari/Implementare/diamond/CS_implementation/source/CS.v
+Verilog design file = C:/Users/Denisa/Desktop/GITHUB/Incercari/Implementare/diamond/CS_implementation/source/CD.v
+Verilog design file = C:/Users/Denisa/Desktop/GITHUB/Incercari/Implementare/diamond/CS_implementation/source/CD_config.v
+Verilog design file = C:/Users/Denisa/Desktop/GITHUB/Incercari/Implementare/diamond/CS_implementation/source/CD_counter.v
+Verilog design file = C:/Users/Denisa/Desktop/GITHUB/Incercari/Implementare/diamond/CS_implementation/source/CM.v
+Verilog design file = C:/Users/Denisa/Desktop/GITHUB/Incercari/Implementare/diamond/CS_implementation/source/CM_Assign_Data.v
+Verilog design file = C:/Users/Denisa/Desktop/GITHUB/Incercari/Implementare/diamond/CS_implementation/source/CM_Config_Manager.v
+Verilog design file = C:/Users/Denisa/Desktop/GITHUB/Incercari/Implementare/diamond/CS_implementation/source/CM_Counter.v
+Verilog design file = C:/Users/Denisa/Desktop/GITHUB/Incercari/Implementare/diamond/CS_implementation/source/DB.v
+Verilog design file = C:/Users/Denisa/Desktop/GITHUB/Incercari/Implementare/diamond/CS_implementation/source/DB_debouncer.v
+Verilog design file = C:/Users/Denisa/Desktop/GITHUB/Incercari/Implementare/diamond/CS_implementation/source/Sync_Reg.v
+Verilog design file = C:/Users/Denisa/Desktop/GITHUB/Incercari/Implementare/diamond/CS_implementation/source/LM.v
+Verilog design file = C:/Users/Denisa/Desktop/GITHUB/Incercari/Implementare/diamond/CS_implementation/source/LM_decoder.v
+Verilog design file = C:/Users/Denisa/Desktop/GITHUB/Incercari/Implementare/diamond/CS_implementation/source/UART.v
+Verilog design file = C:/Users/Denisa/Desktop/GITHUB/Incercari/Implementare/diamond/CS_implementation/source/UART_config.v
+Verilog design file = C:/Users/Denisa/Desktop/GITHUB/Incercari/Implementare/diamond/CS_implementation/source/UART_sampler.v
+Verilog design file = C:/Users/Denisa/Desktop/GITHUB/Incercari/Implementare/diamond/CS_implementation/source/UART_state.v
+Verilog design file = C:/Users/Denisa/Desktop/GITHUB/Incercari/Implementare/diamond/CS_implementation/source/VGA.v
+Verilog design file = C:/Users/Denisa/Desktop/GITHUB/Incercari/Implementare/diamond/CS_implementation/source/VGA_Assign_color.v
+Verilog design file = C:/Users/Denisa/Desktop/GITHUB/Incercari/Implementare/diamond/CS_implementation/source/VGA_Config.v
+Verilog design file = C:/Users/Denisa/Desktop/GITHUB/Incercari/Implementare/diamond/CS_implementation/source/VGA_Counter.v
+Verilog design file = C:/Users/Denisa/Desktop/GITHUB/Incercari/Implementare/diamond/UART_PLL.v
+NGD file = CS_project_CS_implementation.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file D:/diamond/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3d.v. VERI-1482
+Compile design.
+Compile Design Begin
+Analyzing Verilog file c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cs.v. VERI-1482
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cs.v(4): " arg1="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/LM_params.v" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cs.v" arg3="4"  />
+Analyzing Verilog file c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cd.v. VERI-1482
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cd.v(16): " arg1="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CD_params.v" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cd.v" arg3="16"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cd.v(34): " arg1="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CLK_values.v" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cd.v" arg3="34"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CLK_values.v(1): " arg1="CD" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CLK_values.v" arg3="1"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CLK_values.v(2): " arg1="CD" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CLK_values.v" arg3="2"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CLK_values.v(3): " arg1="CD" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CLK_values.v" arg3="3"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CLK_values.v(4): " arg1="CD" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CLK_values.v" arg3="4"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CLK_values.v(5): " arg1="CD" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CLK_values.v" arg3="5"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CLK_values.v(6): " arg1="CD" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CLK_values.v" arg3="6"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CLK_values.v(8): " arg1="CD" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CLK_values.v" arg3="8"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CLK_values.v(9): " arg1="CD" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CLK_values.v" arg3="9"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CLK_values.v(10): " arg1="CD" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CLK_values.v" arg3="10"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CLK_values.v(12): " arg1="CD" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CLK_values.v" arg3="12"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CLK_values.v(13): " arg1="CD" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CLK_values.v" arg3="13"  />
+Analyzing Verilog file c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cd_config.v. VERI-1482
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cd_config.v(14): " arg1="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CD_params.v" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cd_config.v" arg3="14"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cd_config.v(29): " arg1="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cd_config.v" arg3="29"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cd_config.v(30): " arg1="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CLK_values.v" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cd_config.v" arg3="30"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(1): " arg1="CD_config" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="1"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(2): " arg1="CD_config" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="2"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(3): " arg1="CD_config" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="3"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(4): " arg1="CD_config" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="4"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(6): " arg1="CD_config" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="6"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(7): " arg1="CD_config" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="7"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(8): " arg1="CD_config" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="8"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(10): " arg1="CD_config" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="10"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(11): " arg1="CD_config" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="11"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(13): " arg1="CD_config" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="13"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(14): " arg1="CD_config" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="14"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(15): " arg1="CD_config" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="15"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(16): " arg1="CD_config" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="16"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(17): " arg1="CD_config" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="17"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(18): " arg1="CD_config" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="18"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(20): " arg1="CD_config" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="20"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(21): " arg1="CD_config" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="21"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(22): " arg1="CD_config" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="22"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CLK_values.v(1): " arg1="CD_config" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CLK_values.v" arg3="1"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CLK_values.v(2): " arg1="CD_config" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CLK_values.v" arg3="2"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CLK_values.v(3): " arg1="CD_config" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CLK_values.v" arg3="3"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CLK_values.v(4): " arg1="CD_config" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CLK_values.v" arg3="4"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CLK_values.v(5): " arg1="CD_config" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CLK_values.v" arg3="5"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CLK_values.v(6): " arg1="CD_config" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CLK_values.v" arg3="6"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CLK_values.v(8): " arg1="CD_config" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CLK_values.v" arg3="8"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CLK_values.v(9): " arg1="CD_config" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CLK_values.v" arg3="9"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CLK_values.v(10): " arg1="CD_config" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CLK_values.v" arg3="10"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CLK_values.v(12): " arg1="CD_config" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CLK_values.v" arg3="12"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CLK_values.v(13): " arg1="CD_config" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CLK_values.v" arg3="13"  />
+Analyzing Verilog file c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cd_counter.v. VERI-1482
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cd_counter.v(11): " arg1="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CD_params.v" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cd_counter.v" arg3="11"  />
+Analyzing Verilog file c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cm.v. VERI-1482
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cm.v(3): " arg1="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CM_Width_Parameters.v" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cm.v" arg3="3"  />
+Analyzing Verilog file c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cm_assign_data.v. VERI-1482
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cm_assign_data.v(5): " arg1="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CM_Width_Parameters.v" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cm_assign_data.v" arg3="5"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cm_assign_data.v(6): " arg1="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CM_Parameters.v" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cm_assign_data.v" arg3="6"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cm_assign_data.v(7): " arg1="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CM_Addr_Parameters.v" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cm_assign_data.v" arg3="7"  />
+Analyzing Verilog file c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cm_config_manager.v. VERI-1482
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cm_config_manager.v(4): " arg1="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CM_Width_Parameters.v" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cm_config_manager.v" arg3="4"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cm_config_manager.v(5): " arg1="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CM_Addr_Parameters.v" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cm_config_manager.v" arg3="5"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cm_config_manager.v(6): " arg1="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CM_Parameters.v" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cm_config_manager.v" arg3="6"  />
+Analyzing Verilog file c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cm_counter.v. VERI-1482
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cm_counter.v(4): " arg1="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CM_Width_Parameters.v" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cm_counter.v" arg3="4"  />
+Analyzing Verilog file c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/db.v. VERI-1482
+Analyzing Verilog file c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/db_debouncer.v. VERI-1482
+Analyzing Verilog file c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/sync_reg.v. VERI-1482
+Analyzing Verilog file c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/lm.v. VERI-1482
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/lm.v(11): " arg1="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/LM_params.v" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/lm.v" arg3="11"  />
+Analyzing Verilog file c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/lm_decoder.v. VERI-1482
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/lm_decoder.v(12): " arg1="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/LM_params.v" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/lm_decoder.v" arg3="12"  />
+Analyzing Verilog file c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/uart.v. VERI-1482
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/uart.v(14): " arg1="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/UART_params.v" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/uart.v" arg3="14"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/uart.v(35): " arg1="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/uart.v" arg3="35"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(1): " arg1="UART" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="1"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(2): " arg1="UART" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="2"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(3): " arg1="UART" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="3"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(4): " arg1="UART" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="4"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(6): " arg1="UART" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="6"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(7): " arg1="UART" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="7"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(8): " arg1="UART" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="8"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(10): " arg1="UART" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="10"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(11): " arg1="UART" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="11"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(13): " arg1="UART" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="13"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(14): " arg1="UART" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="14"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(15): " arg1="UART" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="15"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(16): " arg1="UART" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="16"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(17): " arg1="UART" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="17"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(18): " arg1="UART" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="18"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(20): " arg1="UART" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="20"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(21): " arg1="UART" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="21"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(22): " arg1="UART" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="22"  />
+Analyzing Verilog file c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/uart_config.v. VERI-1482
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/uart_config.v(16): " arg1="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/UART_params.v" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/uart_config.v" arg3="16"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/uart_config.v(30): " arg1="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/uart_config.v" arg3="30"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(1): " arg1="UART_config" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="1"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(2): " arg1="UART_config" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="2"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(3): " arg1="UART_config" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="3"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(4): " arg1="UART_config" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="4"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(6): " arg1="UART_config" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="6"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(7): " arg1="UART_config" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="7"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(8): " arg1="UART_config" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="8"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(10): " arg1="UART_config" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="10"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(11): " arg1="UART_config" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="11"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(13): " arg1="UART_config" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="13"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(14): " arg1="UART_config" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="14"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(15): " arg1="UART_config" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="15"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(16): " arg1="UART_config" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="16"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(17): " arg1="UART_config" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="17"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(18): " arg1="UART_config" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="18"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(20): " arg1="UART_config" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="20"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(21): " arg1="UART_config" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="21"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(22): " arg1="UART_config" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="22"  />
+Analyzing Verilog file c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/uart_sampler.v. VERI-1482
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/uart_sampler.v(12): " arg1="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/UART_params.v" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/uart_sampler.v" arg3="12"  />
+Analyzing Verilog file c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/uart_state.v. VERI-1482
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/uart_state.v(26): " arg1="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/UART_params.v" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/uart_state.v" arg3="26"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/uart_state.v(44): " arg1="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/uart_state.v" arg3="44"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/uart_state.v(45): " arg1="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_errors.v" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/uart_state.v" arg3="45"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(1): " arg1="UART_state" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="1"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(2): " arg1="UART_state" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="2"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(3): " arg1="UART_state" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="3"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(4): " arg1="UART_state" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="4"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(6): " arg1="UART_state" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="6"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(7): " arg1="UART_state" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="7"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(8): " arg1="UART_state" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="8"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(10): " arg1="UART_state" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="10"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(11): " arg1="UART_state" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="11"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(13): " arg1="UART_state" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="13"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(14): " arg1="UART_state" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="14"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(15): " arg1="UART_state" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="15"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(16): " arg1="UART_state" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="16"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(17): " arg1="UART_state" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="17"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(18): " arg1="UART_state" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="18"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(20): " arg1="UART_state" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="20"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(21): " arg1="UART_state" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="21"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v(22): " arg1="UART_state" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_params.v" arg3="22"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_errors.v(1): " arg1="UART_state" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_errors.v" arg3="1"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_errors.v(4): " arg1="UART_state" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_errors.v" arg3="4"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_errors.v(5): " arg1="UART_state" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_errors.v" arg3="5"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_errors.v(6): " arg1="UART_state" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_errors.v" arg3="6"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_errors.v(9): " arg1="UART_state" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_errors.v" arg3="9"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_errors.v(11): " arg1="UART_state" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_errors.v" arg3="11"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_errors.v(12): " arg1="UART_state" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_errors.v" arg3="12"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_errors.v(13): " arg1="UART_state" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_errors.v" arg3="13"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_errors.v(14): " arg1="UART_state" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_errors.v" arg3="14"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_errors.v(16): " arg1="UART_state" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_errors.v" arg3="16"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_errors.v(17): " arg1="UART_state" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_errors.v" arg3="17"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_errors.v(18): " arg1="UART_state" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_errors.v" arg3="18"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_errors.v(19): " arg1="UART_state" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_errors.v" arg3="19"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_errors.v(21): " arg1="UART_state" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_errors.v" arg3="21"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_errors.v(23): " arg1="UART_state" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_errors.v" arg3="23"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_errors.v(24): " arg1="UART_state" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_errors.v" arg3="24"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_errors.v(25): " arg1="UART_state" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_errors.v" arg3="25"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_errors.v(26): " arg1="UART_state" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/CS_errors.v" arg3="26"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/uart_state.v(49): " arg1="UART_state" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/uart_state.v" arg3="49"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/uart_state.v(50): " arg1="UART_state" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/uart_state.v" arg3="50"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/uart_state.v(51): " arg1="UART_state" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/uart_state.v" arg3="51"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/uart_state.v(52): " arg1="UART_state" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/uart_state.v" arg3="52"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/uart_state.v(53): " arg1="UART_state" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/uart_state.v" arg3="53"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/uart_state.v(54): " arg1="UART_state" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/uart_state.v" arg3="54"  />
+Analyzing Verilog file c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/vga.v. VERI-1482
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/vga.v(13): " arg1="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/VGA_Width_Parameters.v" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/vga.v" arg3="13"  />
+Analyzing Verilog file c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/vga_assign_color.v. VERI-1482
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/vga_assign_color.v(9): " arg1="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/VGA_Width_Parameters.v" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/vga_assign_color.v" arg3="9"  />
+Analyzing Verilog file c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/vga_config.v. VERI-1482
+    <postMsg mid="35901295" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/vga_config.v(19): " arg1="ACTIVE" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/vga_config.v" arg3="19"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/vga_config.v(22): " arg1="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/VGA_Width_Parameters.v" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/vga_config.v" arg3="22"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/vga_config.v(23): " arg1="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/VGA_Parameters.v" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/vga_config.v" arg3="23"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/vga_config.v(24): " arg1="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/VGA_Addr_Parameters.v" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/vga_config.v" arg3="24"  />
+Analyzing Verilog file c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/vga_counter.v. VERI-1482
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/vga_counter.v(12): " arg1="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/VGA_Width_Parameters.v" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/vga_counter.v" arg3="12"  />
+Analyzing Verilog file c:/users/denisa/desktop/github/incercari/implementare/diamond/uart_pll.v. VERI-1482
+Analyzing Verilog file D:/diamond/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3d.v. VERI-1482
+Top module name (Verilog): CS
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cs.v(3): " arg1="CS" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cs.v" arg3="3"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/uart_pll.v(8): " arg1="UART_PLL" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/uart_pll.v" arg3="8"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="D:/diamond/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3d.v(1133): " arg1="VLO" arg2="D:/diamond/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3d.v" arg3="1133"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="D:/diamond/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3d.v(1705): " arg1="EHXPLLJ(CLKFB_DIV=4,CLKOS_DIV=5,CLKOS2_DIV=3,CLKOS3_DIV=26,CLKOP_CPHASE=7,CLKOS_CPHASE=4,CLKOS2_CPHASE=2,CLKOS3_CPHASE=25,FEEDBK_PATH=&quot;INT_DIVA&quot;,PREDIVIDER_MUXD1=1)" arg2="D:/diamond/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3d.v" arg3="1705"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cd.v(15): " arg1="CD" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cd.v" arg3="15"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cd_counter.v(10): " arg1="CD_counter(WIDTH=32)" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cd_counter.v" arg3="10"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cd_counter.v(10): " arg1="CD_counter(WIDTH=24)" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cd_counter.v" arg3="10"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cd_counter.v(26): " arg1="32" arg2="24" arg3="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cd_counter.v" arg4="26"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cd_config.v(13): " arg1="CD_config" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cd_config.v" arg3="13"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/db.v(3): " arg1="DB" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/db.v" arg3="3"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/db_debouncer.v(3): " arg1="DB_debouncer" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/db_debouncer.v" arg3="3"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/db_debouncer.v(33): " arg1="32" arg2="2" arg3="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/db_debouncer.v" arg4="33"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/uart.v(13): " arg1="UART" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/uart.v" arg3="13"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/uart_config.v(15): " arg1="UART_config" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/uart_config.v" arg3="15"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/uart_state.v(25): " arg1="UART_state" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/uart_state.v" arg3="25"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/uart_state.v(119): " arg1="32" arg2="3" arg3="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/uart_state.v" arg4="119"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/uart_state.v(125): " arg1="32" arg2="2" arg3="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/uart_state.v" arg4="125"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/uart_state.v(162): " arg1="32" arg2="2" arg3="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/uart_state.v" arg4="162"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/uart_sampler.v(11): " arg1="UART_sampler" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/uart_sampler.v" arg3="11"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/uart_sampler.v(63): " arg1="32" arg2="4" arg3="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/uart_sampler.v" arg4="63"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/uart_sampler.v(73): " arg1="32" arg2="4" arg3="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/uart_sampler.v" arg4="73"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/uart_sampler.v(74): " arg1="32" arg2="4" arg3="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/uart_sampler.v" arg4="74"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/sync_reg.v(3): " arg1="Sync_Reg(SIZE=8)" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/sync_reg.v" arg3="3"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cm.v(2): " arg1="CM" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cm.v" arg3="2"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cm_config_manager.v(3): " arg1="CM_Config_Manager" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cm_config_manager.v" arg3="3"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cm_config_manager.v(135): " arg1="2" arg2="1" arg3="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cm_config_manager.v" arg4="135"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cm_assign_data.v(4): " arg1="CM_Assign_Data" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cm_assign_data.v" arg3="4"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cm_counter.v(3): " arg1="CM_Counter" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cm_counter.v" arg3="3"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/vga.v(12): " arg1="VGA" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/vga.v" arg3="12"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/vga_config.v(21): " arg1="VGA_Config" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/vga_config.v" arg3="21"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/VGA_Addr_Parameters.v(2): " arg1="10" arg2="4" arg3="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/VGA_Addr_Parameters.v" arg4="2"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/VGA_Addr_Parameters.v(3): " arg1="10" arg2="4" arg3="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/VGA_Addr_Parameters.v" arg4="3"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/VGA_Addr_Parameters.v(4): " arg1="10" arg2="4" arg3="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/VGA_Addr_Parameters.v" arg4="4"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/VGA_Addr_Parameters.v(7): " arg1="10" arg2="4" arg3="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/VGA_Addr_Parameters.v" arg4="7"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/VGA_Addr_Parameters.v(8): " arg1="7" arg2="4" arg3="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/VGA_Addr_Parameters.v" arg4="8"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/vga_counter.v(11): " arg1="VGA_Counter" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/vga_counter.v" arg3="11"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/vga_counter.v(44): " arg1="32" arg2="12" arg3="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/vga_counter.v" arg4="44"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/vga_assign_color.v(8): " arg1="VGA_Assign_color" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/vga_assign_color.v" arg3="8"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/sync_reg.v(3): " arg1="Sync_Reg(SIZE=2)" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/sync_reg.v" arg3="3"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/sync_reg.v(3): " arg1="Sync_Reg" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/sync_reg.v" arg3="3"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/lm.v(10): " arg1="LM" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/lm.v" arg3="10"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/lm_decoder.v(11): " arg1="LM_decoder(WIDTH=8)" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/lm_decoder.v" arg3="11"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/lm_decoder.v(11): " arg1="LM_decoder(WIDTH=2)" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/lm_decoder.v" arg3="11"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/lm_decoder.v(11): " arg1="LM_decoder(WIDTH=4)" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/lm_decoder.v" arg3="11"  />
+Last elaborated design is CS()
+Loading NGL library 'D:/diamond/diamond/3.13/ispfpga/se5c00/data/se5clib.ngl'...
+Loading NGL library 'D:/diamond/diamond/3.13/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'D:/diamond/diamond/3.13/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'D:/diamond/diamond/3.13/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'D:/diamond/diamond/3.13/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'se5c9400.nph' in environment: D:/diamond/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 7.
+Top-level module name = CS.
+    <postMsg mid="35001774" type="Info"    dynamic="2" navigation="0" arg0="\uart/UART_STATE/state_reg" arg1="one-hot"  />
+original encoding -> new encoding (one-hot encoding)
+
+ 000 -> 00001
+
+ 010 -> 00010
+
+ 011 -> 00100
+
+ 100 -> 01000
+
+ 101 -> 10000
+
+
+
+
+    <postMsg mid="35935014" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cm_assign_data.v(91): " arg1="\cm/assignCM/HalfX_reg_i0_i3" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cm_assign_data.v" arg3="91"  />
+    <postMsg mid="35935013" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cd_config.v(49): " arg1="\cd/CLOCK_DIVIDER_CONFIG/baudrate_reg_i0_i5" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cd_config.v" arg3="49"  />
+    <postMsg mid="35935013" type="Warning" dynamic="2" navigation="2" arg0="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cm_assign_data.v(91): " arg1="\cm/assignCM/V_BackPorch_reg_i0_i0" arg2="c:/users/denisa/desktop/github/incercari/implementare/diamond/cs_implementation/source/cm_assign_data.v" arg3="91"  />
+GSR instance connected to net rst_n_c.
+Duplicate register/latch removal. \cm/assignCM/HalfY_reg_i0_i8 is a one-to-one match with \cm/assignCM/HalfX_reg_i0_i7.
+Duplicate register/latch removal. \cm/assignCM/HalfY_reg_i0_i7 is a one-to-one match with \cm/assignCM/V_FrontPorch_reg_i0_i8.
+Duplicate register/latch removal. \cm/assignCM/HalfY_reg_i0_i6 is a one-to-one match with \cm/assignCM/HalfY_reg_i0_i2.
+Duplicate register/latch removal. \cm/assignCM/HalfY_reg_i0_i4 is a one-to-one match with \cm/assignCM/HalfX_reg_i0_i6.
+Duplicate register/latch removal. \cm/assignCM/HalfX_reg_i0_i5 is a one-to-one match with \cm/assignCM/HalfY_reg_i0_i6.
+Duplicate register/latch removal. \cm/assignCM/HalfX_reg_i0_i4 is a one-to-one match with \cm/assignCM/HalfX_reg_i0_i5.
+Duplicate register/latch removal. \cm/assignCM/V_FrontPorch_reg_i0_i9 is a one-to-one match with \cm/assignCM/HalfY_reg_i0_i8.
+Duplicate register/latch removal. \cm/assignCM/V_FrontPorch_reg_i0_i7 is a one-to-one match with \cm/assignCM/HalfX_reg_i0_i4.
+Duplicate register/latch removal. \cm/assignCM/V_FrontPorch_reg_i0_i5 is a one-to-one match with \cm/assignCM/HalfY_reg_i0_i4.
+Duplicate register/latch removal. \cm/assignCM/V_FrontPorch_reg_i0_i3 is a one-to-one match with \cm/assignCM/V_FrontPorch_reg_i0_i7.
+Duplicate register/latch removal. \cm/assignCM/V_BackPorch_reg_i0_i3 is a one-to-one match with \cm/assignCM/V_FrontPorch_reg_i0_i3.
+Duplicate register/latch removal. \cm/assignCM/H_FrontPorch_reg_i0_i8 is a one-to-one match with \cm/assignCM/V_FrontPorch_reg_i0_i9.
+Duplicate register/latch removal. \cm/assignCM/H_FrontPorch_reg_i0_i7 is a one-to-one match with \cm/assignCM/V_FrontPorch_reg_i0_i5.
+Duplicate register/latch removal. \cm/assignCM/H_FrontPorch_reg_i0_i6 is a one-to-one match with \cm/assignCM/V_BackPorch_reg_i0_i3.
+Duplicate register/latch removal. \cm/assignCM/H_FrontPorch_reg_i0_i5 is a one-to-one match with \cm/assignCM/H_FrontPorch_reg_i0_i6.
+Duplicate register/latch removal. \cm/assignCM/H_BackPorch_reg_i0_i7 is a one-to-one match with \cm/assignCM/H_FrontPorch_reg_i0_i7.
+Duplicate register/latch removal. \cm/assignCM/H_BackPorch_reg_i0_i5 is a one-to-one match with \cm/assignCM/HalfY_reg_i0_i7.
+Duplicate register/latch removal. \cm/assignCM/H_BackPorch_reg_i0_i4 is a one-to-one match with \cm/assignCM/H_FrontPorch_reg_i0_i8.
+Duplicate register/latch removal. \cm/assignCM/H_BackPorch_reg_i0_i3 is a one-to-one match with \cm/assignCM/H_FrontPorch_reg_i0_i5.
+Applying 200.000000 MHz constraint to all clocks
+
+    <postMsg mid="35001611" type="Warning" dynamic="0" navigation="0"  />
+Results of NGD DRC are available in CS_drc.log.
+Loading NGL library 'D:/diamond/diamond/3.13/ispfpga/se5c00/data/se5clib.ngl'...
+Loading NGL library 'D:/diamond/diamond/3.13/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'D:/diamond/diamond/3.13/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'D:/diamond/diamond/3.13/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'D:/diamond/diamond/3.13/ispfpga/or5g00/data/orc5glib.ngl'...
+    <postMsg mid="50001000" type="Warning" dynamic="3" navigation="0" arg0="CLKOS3" arg1="FREQUENCY_PIN_CLKOS3" arg2="PLLInst_0"  />
+    <postMsg mid="50001000" type="Warning" dynamic="3" navigation="0" arg0="CLKOS2" arg1="FREQUENCY_PIN_CLKOS2" arg2="PLLInst_0"  />
+    <postMsg mid="50001000" type="Warning" dynamic="3" navigation="0" arg0="CLKOS" arg1="FREQUENCY_PIN_CLKOS" arg2="PLLInst_0"  />
+
+
+Running DRC...
+
+DRC complete with no errors or warnings
+
+Design Results:
+   1172 blocks expanded
+completed the first expansion
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file CS_project_CS_implementation.ngd.
+
+################### Begin Area Report (CS)######################
+Number of register bits => 509 of 10021 (5 % )
+CCU2D => 205
+EHXPLLJ => 1
+FD1P3AX => 120
+FD1P3AY => 6
+FD1P3BX => 1
+FD1P3DX => 22
+FD1P3IX => 29
+FD1P3JX => 1
+FD1S1A => 52
+FD1S1D => 1
+FD1S1I => 27
+FD1S3AX => 66
+FD1S3AY => 22
+FD1S3DX => 51
+FD1S3IX => 107
+FD1S3JX => 4
+GSR => 1
+IB => 7
+LUT4 => 403
+OB => 23
+PFUMX => 20
+################### End Area Report ##################
+
+################### Begin BlackBox Report ######################
+TSALL => 1
+################### End BlackBox Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 9
+  Net : clk_c, loads : 389
+  Net : vga/config1/H_Left_Margin_nxt_8__N_967, loads : 76
+  Net : cd/CNT_UART/clk_UART, loads : 14
+  Net : vga/CounterH/HSYNC_c, loads : 17
+  Net : cd/CNT_DB/clk_DB, loads : 14
+  Net : basic_4OUT_PLL/clk_VGA, loads : 12
+  Net : cm/configCM/State_nxt_2__N_486, loads : 3
+  Net : cd/CNT_LM/clk_LM, loads : 3
+  Net : vga/config1/c_data_1_derived_1, loads : 3
+Clock Enable Nets
+Number of Clock Enables: 42
+Top 10 highest fanout Clock Enables:
+  Net : cm/assignCM/clk_c_enable_79, loads : 19
+  Net : cm/configCM/clk_c_enable_54, loads : 16
+  Net : cm/assignCM/clk_c_enable_139, loads : 12
+  Net : cm/assignCM/clk_c_enable_123, loads : 12
+  Net : cm/assignCM/clk_c_enable_112, loads : 12
+  Net : cm/assignCM/clk_c_enable_101, loads : 12
+  Net : cm/configCM/clk_c_enable_45, loads : 11
+  Net : FIFO_UART_CM/clk_c_enable_158, loads : 8
+  Net : cd/CLOCK_DIVIDER_CONFIG/clk_VGA_enable_9, loads : 8
+  Net : cm/configCM/clk_c_enable_157, loads : 8
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : vga/config1/n7362, loads : 75
+  Net : cm/configCM/c_data_1, loads : 69
+  Net : cm/configCM/c_data_0, loads : 61
+  Net : cd/CNT_UART/counter_23_N_178_9, loads : 43
+  Net : cd/CNT_DB/counter_31__N_85, loads : 36
+  Net : cd/CNT_LM/counter_31__N_85, loads : 32
+  Net : n1553, loads : 30
+  Net : vga/CounterV/Count_h_11__N_948, loads : 25
+  Net : cd/CNT_UART/clk_UART_N_18, loads : 25
+  Net : uart/UART_STATE/error_1__N_334, loads : 23
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk7 [get_nets                          |             |             |
+\cm/configCM/State_nxt_2__N_486]        |            -|            -|     0  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk6 [get_nets clk_LM]                  |            -|            -|     0  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk5 [get_nets                          |             |             |
+\vga/config1/H_Left_Margin_nxt_8__N_967]|            -|            -|     0  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk4 [get_nets clk_UART]                |  200.000 MHz|  213.174 MHz|     3  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk3 [get_nets HSYNC_c]                 |  200.000 MHz|  139.043 MHz|     6 *
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk2 [get_nets clk_DB]                  |  200.000 MHz|  606.796 MHz|     1  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk1 [get_nets clk_c]                   |  200.000 MHz|   87.742 MHz|    17 *
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk_VGA]                 |            -|            -|     0  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+2 constraints not met.
+
+
+Peak Memory Usage: 78.461  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 4.453  secs
+--------------------------------------------------------------
+
+map -a "MachXO3D" -p LCMXO3D-9400HC -t CABGA256 -s 5 -oc Commercial   "CS_project_CS_implementation.ngd" -o "CS_project_CS_implementation_map.ncd" -pr "CS_project_CS_implementation.prf" -mp "CS_project_CS_implementation.mrp" -lpf "C:/Users/Denisa/Desktop/GITHUB/Incercari/Implementare/diamond/CS_implementation/CS_project_CS_implementation.lpf" -lpf "C:/Users/Denisa/Desktop/GITHUB/Incercari/Implementare/diamond/CS_project.lpf"  -c 0           
+map:  version Diamond (64-bit) 3.13.0.56.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+   Process the file: CS_project_CS_implementation.ngd
+   Picdevice="LCMXO3D-9400HC"
+
+   Pictype="CABGA256"
+
+   Picspeed=5
+
+   Remove unused logic
+
+   Do not produce over sized NCDs.
+
+Part used: LCMXO3D-9400HCCABGA256, Performance used: 5.
+
+    <postMsg mid="1100679" type="Warning" dynamic="2" navigation="2" arg0="C:/Users/Denisa/Desktop/GITHUB/Incercari/Implementare/diamond/CS_project.lpf(5): Semantic error in &quot;LOCATE COMP &quot;rst&quot; SITE &quot;B3&quot; ;&quot;: " arg1="rst" arg2="C:/Users/Denisa/Desktop/GITHUB/Incercari/Implementare/diamond/CS_project.lpf" arg3="5"  />
+    <postMsg mid="1100644" type="Warning" dynamic="2" navigation="2" arg0="C:/Users/Denisa/Desktop/GITHUB/Incercari/Implementare/diamond/CS_project.lpf(47): Semantic error in &quot;IOBUF PORT &quot;rst&quot; PULLMODE=UP IO_TYPE=LVCMOS33 ;&quot;: " arg1="rst" arg2="C:/Users/Denisa/Desktop/GITHUB/Incercari/Implementare/diamond/CS_project.lpf" arg3="47"  />
+Loading device for application map from file 'se5c9400.nph' in environment: D:/diamond/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 7.
+
+Running general design DRC...
+
+Removing unused logic...
+
+Optimizing...
+
+
+
+
+Design Summary:
+   Number of registers:    509 out of 10021 (5%)
+      PFU registers:          509 out of  9400 (5%)
+      PIO registers:            0 out of   621 (0%)
+   Number of SLICEs:       415 out of  4700 (9%)
+      SLICEs as Logic/ROM:    415 out of  4700 (9%)
+      SLICEs as RAM:            0 out of  3525 (0%)
+      SLICEs as Carry:        205 out of  4700 (4%)
+   Number of LUT4s:        810 out of  9400 (9%)
+      Number used as logic LUTs:        400
+      Number used as distributed RAM:     0
+      Number used as ripple logic:      410
+      Number used as shift registers:     0
+   Number of PIO sites used: 30 + 4(JTAG) out of 207 (16%)
+   Number of block RAMs:  0 out of 48 (0%)
+   Number of GSRs:        1 out of 1 (100%)
+   EFB used :        No
+   JTAG used :       No
+   Readback used :   No
+   Oscillator used : No
+   Security used :   No
+   Startup used :    No
+   POR :             On
+   Bandgap :         On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCSLEWRATEA):  0 out of 6 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  1 out of 2 (50%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
+   Number of clocks:  9
+     Net clk_UART: 7 loads, 7 rising, 0 falling (Driver: cd/CNT_UART/clkout_17 )
+     Net clk_c: 218 loads, 218 rising, 0 falling (Driver: PIO clk )
+     Net clk_LM: 1 loads, 1 rising, 0 falling (Driver: cd/CNT_LM/clkout_17 )
+     Net HSYNC_c: 7 loads, 7 rising, 0 falling (Driver: vga/CounterH/Sync_State_reg_13 )
+     Net clk_DB: 6 loads, 6 rising, 0 falling (Driver: cd/CNT_DB/clkout_17 )
+     Net cm/configCM/State_nxt_2__N_486: 3 loads, 3 rising, 0 falling (Driver: cm/configCM/i3088_2_lut )
+     Net clk_VGA: 10 loads, 10 rising, 0 falling (Driver: basic_4OUT_PLL/PLLInst_0 )
+     Net vga/config1/H_Left_Margin_nxt_8__N_967: 41 loads, 41 rising, 0 falling (Driver: vga/config1/i5995_2_lut_2_lut_3_lut )
+     Net vga/config1/c_data_1_derived_1: 1 loads, 1 rising, 0 falling (Driver: vga/config1/i6027_2_lut_rep_135 )
+   Number of Clock Enables:  42
+     Net FIFO_UART_CM/clk_c_enable_158: 4 loads, 4 LSLICEs
+     Net FIFO_UART_CM/clk_LM_enable_1: 1 loads, 1 LSLICEs
+     Net FIFO_UART_CM/clk_c_enable_61: 4 loads, 4 LSLICEs
+     Net clk_c_enable_62: 1 loads, 1 LSLICEs
+     Net ctr_ff_1: 1 loads, 1 LSLICEs
+     Net clk_c_enable_142: 2 loads, 2 LSLICEs
+     Net ctr_ff_1_adj_1145: 1 loads, 1 LSLICEs
+     Net clk_c_enable_143: 2 loads, 2 LSLICEs
+     Net clk_c_enable_156: 1 loads, 1 LSLICEs
+     Net ctr_ff_1_adj_1147: 1 loads, 1 LSLICEs
+     Net clk_c_enable_144: 2 loads, 2 LSLICEs
+     Net clk_c_enable_153: 2 loads, 2 LSLICEs
+     Net clk_c_enable_147: 2 loads, 2 LSLICEs
+     Net VSYNC_c: 1 loads, 1 LSLICEs
+     Net HSYNC_c: 1 loads, 1 LSLICEs
+     Net clk_c_enable_32: 2 loads, 2 LSLICEs
+     Net clk_c_enable_155: 6 loads, 6 LSLICEs
+     Net ctr_ff_1_adj_1153: 1 loads, 1 LSLICEs
+     Net clk_c_enable_34: 2 loads, 2 LSLICEs
+     Net cm/configCM/clk_c_enable_129: 1 loads, 1 LSLICEs
+     Net cm/configCM/clk_c_enable_141: 1 loads, 1 LSLICEs
+     Net cm/configCM/clk_c_enable_45: 6 loads, 6 LSLICEs
+     Net cm/configCM/clk_c_enable_148: 3 loads, 3 LSLICEs
+     Net cm/configCM/clk_c_enable_54: 4 loads, 4 LSLICEs
+     Net cm/configCM/clk_c_enable_157: 4 loads, 4 LSLICEs
+     Net cm/configCM/clk_c_enable_146: 1 loads, 1 LSLICEs
+     Net cm/assignCM/clk_c_enable_139: 6 loads, 6 LSLICEs
+     Net cm/assignCM/clk_c_enable_123: 6 loads, 6 LSLICEs
+     Net cm/assignCM/clk_c_enable_112: 6 loads, 6 LSLICEs
+     Net cm/assignCM/clk_c_enable_101: 6 loads, 6 LSLICEs
+     Net cm/assignCM/clk_c_enable_90: 1 loads, 1 LSLICEs
+     Net cm/assignCM/clk_c_enable_79: 9 loads, 9 LSLICEs
+     Net clk_c_enable_89: 4 loads, 4 LSLICEs
+     Net clk_VGA_enable_1: 1 loads, 1 LSLICEs
+     Net uart/clk_UART_enable_3: 1 loads, 1 LSLICEs
+     Net uart/clk_UART_enable_2: 1 loads, 1 LSLICEs
+     Net uart/UART_STATE/clk_UART_enable_1: 1 loads, 1 LSLICEs
+     Net uart/clk_c_enable_67: 3 loads, 3 LSLICEs
+     Net uart/UART_STATE/clk_UART_enable_4: 1 loads, 1 LSLICEs
+     Net uart/UART_STATE/clk_UART_enable_5: 1 loads, 1 LSLICEs
+     Net uart/UART_CONFIG/clk_VGA_enable_2: 1 loads, 1 LSLICEs
+     Net cd/CLOCK_DIVIDER_CONFIG/clk_VGA_enable_9: 5 loads, 5 LSLICEs
+   Number of LSRs:  29
+     Net counter_31__N_85: 17 loads, 17 LSLICEs
+     Net VSYNC_c: 6 loads, 6 LSLICEs
+     Net HSYNC_c: 6 loads, 6 LSLICEs
+     Net counter_31__N_85_adj_1144: 17 loads, 17 LSLICEs
+     Net n3055: 2 loads, 2 LSLICEs
+     Net n3053: 2 loads, 2 LSLICEs
+     Net n3051: 2 loads, 2 LSLICEs
+     Net n3042: 2 loads, 2 LSLICEs
+     Net cm/counterV/n3043: 6 loads, 6 LSLICEs
+     Net cm/counterH/n3045: 6 loads, 6 LSLICEs
+     Net cm/configCM/n7343: 1 loads, 1 LSLICEs
+     Net cm/configCM/n6390: 1 loads, 1 LSLICEs
+     Net c_valid: 2 loads, 2 LSLICEs
+     Net cm/configCM/n3058: 1 loads, 1 LSLICEs
+     Net cm/configCM/clk_c_enable_54: 4 loads, 4 LSLICEs
+     Net cm/configCM/n3038: 1 loads, 1 LSLICEs
+     Net button_signal_DEBUG_VGA: 1 loads, 1 LSLICEs
+     Net n7362: 13 loads, 13 LSLICEs
+     Net uart/clk_UART_enable_2: 1 loads, 1 LSLICEs
+     Net uart/UART_STATE/error_1__N_334: 14 loads, 14 LSLICEs
+     Net n3880: 1 loads, 1 LSLICEs
+     Net uart/SAMPLER/n3049: 2 loads, 2 LSLICEs
+     Net uart/SAMPLER/n3047: 2 loads, 2 LSLICEs
+     Net vga/config1/Load_nxt_N_1042: 1 loads, 1 LSLICEs
+     Net vga/Count_h_11__N_948: 14 loads, 14 LSLICEs
+     Net cd/CNT_UART/clk_UART_N_18: 13 loads, 13 LSLICEs
+     Net cd/CLOCK_DIVIDER_CONFIG/n3069: 1 loads, 1 LSLICEs
+     Net cd/CLOCK_DIVIDER_CONFIG/n3068: 1 loads, 1 LSLICEs
+     Net cd/CLOCK_DIVIDER_CONFIG/n3067: 1 loads, 1 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net c_data_1: 71 loads
+     Net n7362: 64 loads
+     Net c_data_0: 63 loads
+     Net counter_23_N_178_9: 45 loads
+     Net n1553: 30 loads
+     Net button_signal_DEBUG_VGA: 23 loads
+     Net counter_31__N_85_adj_1144: 23 loads
+     Net counter_31__N_85: 19 loads
+     Net cm/assignCM/clk_c_enable_79: 16 loads
+     Net cm/configCM/RXD_Data_reg_11: 15 loads
+ 
+
+   Number of warnings:  2
+   Number of errors:    0
+
+
+
+Total CPU Time: 1 secs  
+Total REAL Time: 0 secs  
+Peak Memory Usage: 74 MB
+
+Dumping design to file CS_project_CS_implementation_map.ncd.
+
+ncd2vdb "CS_project_CS_implementation_map.ncd" ".vdbs/CS_project_CS_implementation_map.vdb"
+
+Loading device for application ncd2vdb from file 'se5c9400.nph' in environment: D:/diamond/diamond/3.13/ispfpga.
+
+trce -f "CS_project_CS_implementation.mt" -o "CS_project_CS_implementation.tw1" "CS_project_CS_implementation_map.ncd" "CS_project_CS_implementation.prf"
+trce:  version Diamond (64-bit) 3.13.0.56.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application trce from file cs_project_cs_implementation_map.ncd.
+Design name: CS
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO3D-9400HC
+Package:     CABGA256
+Performance: 5
+Loading device for application trce from file 'se5c9400.nph' in environment: D:/diamond/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 7.
+Performance Hardware Data Status:   Final          Version 2.2.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.13.0.56.2
+Fri Jun 21 03:28:06 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o CS_project_CS_implementation.tw1 -gui -msgset C:/Users/Denisa/Desktop/GITHUB/Incercari/Implementare/diamond/promote.xml CS_project_CS_implementation_map.ncd CS_project_CS_implementation.prf 
+Design file:     cs_project_cs_implementation_map.ncd
+Preference file: cs_project_cs_implementation.prf
+Device,speed:    LCMXO3D-9400HC,5
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+BLOCK JTAG PATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 17776 paths, 3 nets, and 2170 connections (72.41% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.13.0.56.2
+Fri Jun 21 03:28:07 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o CS_project_CS_implementation.tw1 -gui -msgset C:/Users/Denisa/Desktop/GITHUB/Incercari/Implementare/diamond/promote.xml CS_project_CS_implementation_map.ncd CS_project_CS_implementation.prf 
+Design file:     cs_project_cs_implementation_map.ncd
+Preference file: cs_project_cs_implementation.prf
+Device,speed:    LCMXO3D-9400HC,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+BLOCK JTAG PATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 17776 paths, 3 nets, and 2416 connections (80.61% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 0 (setup), 0 (hold)
+Score: 0 (setup), 0 (hold)
+Cumulative negative slack: 0 (0+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+Total CPU Time: 1 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 79 MB
+
+
+ldbanno "CS_project_CS_implementation_map.ncd" -n Verilog -o "CS_project_CS_implementation_mapvo.vo" -w -neg
+ldbanno: version Diamond (64-bit) 3.13.0.56.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Writing a Verilog netlist using the orca library type based on the CS_project_CS_implementation_map design file.
+
+
+Loading design for application ldbanno from file CS_project_CS_implementation_map.ncd.
+Design name: CS
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO3D-9400HC
+Package:     CABGA256
+Performance: 5
+Loading device for application ldbanno from file 'se5c9400.nph' in environment: D:/diamond/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 7.
+Performance Hardware Data Status:   Final          Version 2.2.
+Converting design CS_project_CS_implementation_map.ncd into .ldb format.
+Writing Verilog netlist to file CS_project_CS_implementation_mapvo.vo
+Writing SDF timing to file CS_project_CS_implementation_mapvo.sdf
+    <postMsg mid="35400250" type="Info"    dynamic="1" navigation="0" arg0="0"  />
+Total CPU Time: 2 secs 
+Total REAL Time: 2 secs 
+Peak Memory Usage: 69 MB
+
+mpartrce -p "CS_project_CS_implementation.p2t" -f "CS_project_CS_implementation.p3t" -tf "CS_project_CS_implementation.pt" "CS_project_CS_implementation_map.ncd" "CS_project_CS_implementation.ncd"
+
+---- MParTrce Tool ----
+Removing old design directory at request of -rem command line option to this program.
+Running par. Please wait . . .
+
+Lattice Place and Route Report for Design "CS_project_CS_implementation_map.ncd"
+Fri Jun 21 03:28:11 2024
+
+PAR: Place And Route Diamond (64-bit) 3.13.0.56.2.
+Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset C:/Users/Denisa/Desktop/GITHUB/Incercari/Implementare/diamond/promote.xml -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF:parASE=1 CS_project_CS_implementation_map.ncd CS_project_CS_implementation.dir/5_1.ncd CS_project_CS_implementation.prf
+Preference file: CS_project_CS_implementation.prf.
+Placement level-cost: 5-1.
+Routing Iterations: 6
+
+Loading design for application par from file CS_project_CS_implementation_map.ncd.
+Design name: CS
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO3D-9400HC
+Package:     CABGA256
+Performance: 5
+Loading device for application par from file 'se5c9400.nph' in environment: D:/diamond/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 7.
+Performance Hardware Data Status:   Final          Version 2.2.
+License checked out.
+
+
+Ignore Preference Error(s):  True
+Device utilization summary:
+
+   PIO (prelim)   30+4(JTAG)/384     9% used
+                  30+4(JTAG)/207     16% bonded
+
+   SLICE            415/4700          8% used
+
+   GSR                1/1           100% used
+   PLL                1/2            50% used
+
+
+Number of Signals: 1255
+Number of Connections: 2997
+    <postMsg mid="61061045" type="Warning" dynamic="0" navigation="0"  />
+
+Pin Constraint Summary:
+   25 out of 30 pins locked (83% locked).
+
+The following 3 signals are selected to use the primary clock routing resources:
+    clk_VGA (driver: basic_4OUT_PLL/PLLInst_0, clk load #: 10)
+    clk_c (driver: clk, clk load #: 218)
+    vga/config1/H_Left_Margin_nxt_8__N_967 (driver: vga/config1/SLICE_496, clk load #: 41)
+
+
+The following 8 signals are selected to use the secondary clock routing resources:
+    HSYNC_c (driver: vga/CounterH/SLICE_231, clk load #: 7, sr load #: 6, ce load #: 1)
+    counter_31__N_85 (driver: SLICE_139, clk load #: 0, sr load #: 17, ce load #: 0)
+    counter_31__N_85_adj_1144 (driver: SLICE_172, clk load #: 0, sr load #: 17, ce load #: 0)
+    clk_UART (driver: SLICE_292, clk load #: 7, sr load #: 0, ce load #: 0)
+    uart/UART_STATE/error_1__N_334 (driver: SLICE_521, clk load #: 0, sr load #: 14, ce load #: 0)
+    vga/Count_h_11__N_948 (driver: vga/SLICE_444, clk load #: 0, sr load #: 14, ce load #: 0)
+    n7362 (driver: vga/config1/SLICE_496, clk load #: 0, sr load #: 13, ce load #: 0)
+    cd/CNT_UART/clk_UART_N_18 (driver: SLICE_521, clk load #: 0, sr load #: 13, ce load #: 0)
+
+Signal rst_n_c is selected as Global Set/Reset.
+.
+Starting Placer Phase 0.
+.............
+Finished Placer Phase 0.  REAL time: 6 secs 
+
+Starting Placer Phase 1.
+.....................
+Placer score = 168526.
+Finished Placer Phase 1.  REAL time: 17 secs 
+
+Starting Placer Phase 2.
+.
+Placer score =  167909
+Finished Placer Phase 2.  REAL time: 18 secs 
+
+
+------------------ Clock Report ------------------
+
+Global Clock Resources:
+  CLK_PIN    : 1 out of 8 (12%)
+  PLL        : 1 out of 2 (50%)
+  DCM        : 0 out of 2 (0%)
+  DCC        : 0 out of 8 (0%)
+
+Global Clocks:
+  PRIMARY "clk_VGA" from CLKOP on comp "basic_4OUT_PLL/PLLInst_0" on PLL site "LPLL", clk load = 10
+  PRIMARY "clk_c" from comp "clk" on CLK_PIN site "C8 (PT23A)", clk load = 218
+  PRIMARY "vga/config1/H_Left_Margin_nxt_8__N_967" from F0 on comp "vga/config1/SLICE_496" on site "R2C24A", clk load = 41
+  SECONDARY "HSYNC_c" from Q0 on comp "vga/CounterH/SLICE_231" on site "R23C24A", clk load = 7, ce load = 1, sr load = 6
+  SECONDARY "counter_31__N_85" from F1 on comp "SLICE_139" on site "R23C23D", clk load = 0, ce load = 0, sr load = 17
+  SECONDARY "counter_31__N_85_adj_1144" from F1 on comp "SLICE_172" on site "R9C27D", clk load = 0, ce load = 0, sr load = 17
+  SECONDARY "clk_UART" from Q0 on comp "SLICE_292" on site "R23C26C", clk load = 7, ce load = 0, sr load = 0
+  SECONDARY "uart/UART_STATE/error_1__N_334" from F0 on comp "SLICE_521" on site "R23C24C", clk load = 0, ce load = 0, sr load = 14
+  SECONDARY "vga/Count_h_11__N_948" from F1 on comp "vga/SLICE_444" on site "R23C24B", clk load = 0, ce load = 0, sr load = 14
+  SECONDARY "n7362" from F1 on comp "vga/config1/SLICE_496" on site "R2C24A", clk load = 0, ce load = 0, sr load = 13
+  SECONDARY "cd/CNT_UART/clk_UART_N_18" from F1 on comp "SLICE_521" on site "R23C24C", clk load = 0, ce load = 0, sr load = 13
+
+  PRIMARY  : 3 out of 8 (37%)
+  SECONDARY: 8 out of 8 (100%)
+
+Edge Clocks:
+  No edge clock selected.
+
+--------------- End of Clock Report ---------------
+
+
+I/O Usage Summary (final):
+   30 + 4(JTAG) out of 384 (8.9%) PIO sites used.
+   30 + 4(JTAG) out of 207 (16.4%) bonded PIO sites used.
+   Number of PIO comps: 30; differential: 0.
+   Number of Vref pins used: 0.
+
+I/O Bank Usage Summary:
++----------+---------------+------------+-----------+
+| I/O Bank | Usage         | Bank Vccio | Bank Vref |
++----------+---------------+------------+-----------+
+| 0        | 1 / 51 (  1%) | 3.3V       | -         |
+| 1        | 8 / 52 ( 15%) | 3.3V       | -         |
+| 2        | 5 / 52 (  9%) | 2.5V       | -         |
+| 3        | 4 / 16 ( 25%) | 3.3V       | -         |
+| 4        | 7 / 16 ( 43%) | 3.3V       | -         |
+| 5        | 5 / 20 ( 25%) | 3.3V       | -         |
++----------+---------------+------------+-----------+
+
+Total placer CPU time: 16 secs 
+
+Dumping design to file CS_project_CS_implementation.dir/5_1.ncd.
+
+0 connections routed; 2997 unrouted.
+Starting router resource preassignment
+
+    <postMsg mid="66011008" type="Warning" dynamic="1" navigation="0" arg0="&#xA;   Signal=clk_LM loads=3 clock_loads=1&#xA;   Signal=clk_DB loads=12 clock_loads=6&#xA;   Signal=cm/configCM/State_nxt_2__N_486 loads=3 clock_loads=3&#xA;   Signal=vga/config1/c_data_1_derived_1 loads=3 clock_loads=1"  />
+
+Completed router resource preassignment. Real time: 23 secs 
+
+Start NBR router at 03:28:34 06/21/24
+
+*****************************************************************
+Info: NBR allows conflicts(one node used by more than one signal)
+      in the earlier iterations. In each iteration, it tries to  
+      solve the conflicts while keeping the critical connections 
+      routed as short as possible. The routing process is said to
+      be completed when no conflicts exist and all connections   
+      are routed.                                                
+Note: NBR uses a different method to calculate timing slacks. The
+      worst slack and total negative slack may not be the same as
+      that in TRCE report. You should always run TRCE to verify  
+      your design.                                               
+*****************************************************************
+
+Start NBR special constraint process at 03:28:35 06/21/24
+
+Start NBR section for initial routing at 03:28:37 06/21/24
+Level 4, iteration 1
+151(0.03%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 16.244ns/0.000ns; real time: 28 secs 
+
+Info: Initial congestion level at 75% usage is 0
+Info: Initial congestion area  at 75% usage is 0 (0.00%)
+
+Start NBR section for normal routing at 03:28:39 06/21/24
+Level 4, iteration 1
+67(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 16.244ns/0.000ns; real time: 29 secs 
+Level 4, iteration 2
+27(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 16.244ns/0.000ns; real time: 30 secs 
+Level 4, iteration 3
+7(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 16.244ns/0.000ns; real time: 31 secs 
+Level 4, iteration 4
+3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 16.244ns/0.000ns; real time: 31 secs 
+Level 4, iteration 5
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 16.244ns/0.000ns; real time: 32 secs 
+Level 4, iteration 6
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 16.244ns/0.000ns; real time: 32 secs 
+Level 4, iteration 7
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 16.244ns/0.000ns; real time: 33 secs 
+
+Start NBR section for setup/hold timing optimization with effort level 3 at 03:28:44 06/21/24
+Level 4, iteration 0
+Level 4, iteration 1
+2(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<hold >: 0.018ns/0.000ns; real time: 41 secs 
+Level 4, iteration 2
+0(0.00%) conflict; 1(0.03%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<hold >: 0.018ns/0.000ns; real time: 41 secs 
+Level 4, iteration 0
+0(0.00%) conflict; 1(0.03%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 4.888ns/0.000ns; real time: 43 secs 
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 4.888ns/0.000ns; real time: 43 secs 
+
+Start NBR section for re-routing at 03:28:56 06/21/24
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 4.908ns/0.000ns; real time: 45 secs 
+
+Start NBR section for post-routing at 03:28:56 06/21/24
+
+End NBR router with 0 unrouted connection
+
+NBR Summary
+-----------
+  Number of unrouted connections : 0 (0.00%)
+  Number of connections with timing violations : 0 (0.00%)
+  Estimated worst slack<setup> : 14.899ns
+  Timing score<setup> : 0
+-----------
+Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
+
+
+
+    <postMsg mid="66011008" type="Warning" dynamic="1" navigation="0" arg0="&#xA;   Signal=clk_LM loads=3 clock_loads=1&#xA;   Signal=clk_DB loads=12 clock_loads=6&#xA;   Signal=cm/configCM/State_nxt_2__N_486 loads=3 clock_loads=3&#xA;   Signal=vga/config1/c_data_1_derived_1 loads=3 clock_loads=1"  />
+
+Total CPU time 45 secs 
+Total REAL time: 53 secs 
+Completely routed.
+End of route.  2997 routed (100.00%); 0 unrouted.
+
+Hold time timing score: 0, hold timing errors: 0
+
+Timing score: 0 
+
+Dumping design to file CS_project_CS_implementation.dir/5_1.ncd.
+
+
+PAR_SUMMARY::Run status = Completed
+PAR_SUMMARY::Number of unrouted conns = 0
+PAR_SUMMARY::Worst  slack<setup/<ns>> = 14.899
+PAR_SUMMARY::Timing score<setup/<ns>> = 0.000
+PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.023
+PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
+PAR_SUMMARY::Number of errors = 0
+
+Total CPU  time to completion: 45 secs 
+Total REAL time to completion: 53 secs 
+
+par done!
+
+Note: user must run 'Trace' for timing closure signoff.
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+Exiting par with exit code 0
+Exiting mpartrce with exit code 0
+
+trce -f "CS_project_CS_implementation.pt" -o "CS_project_CS_implementation.twr" "CS_project_CS_implementation.ncd" "CS_project_CS_implementation.prf"
+trce:  version Diamond (64-bit) 3.13.0.56.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application trce from file cs_project_cs_implementation.ncd.
+Design name: CS
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO3D-9400HC
+Package:     CABGA256
+Performance: 5
+Loading device for application trce from file 'se5c9400.nph' in environment: D:/diamond/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 7.
+Performance Hardware Data Status:   Final          Version 2.2.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.13.0.56.2
+Fri Jun 21 03:29:06 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 5 -sphld m -o CS_project_CS_implementation.twr -gui -msgset C:/Users/Denisa/Desktop/GITHUB/Incercari/Implementare/diamond/promote.xml CS_project_CS_implementation.ncd CS_project_CS_implementation.prf 
+Design file:     cs_project_cs_implementation.ncd
+Preference file: cs_project_cs_implementation.prf
+Device,speed:    LCMXO3D-9400HC,5
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+BLOCK JTAG PATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 17776 paths, 3 nets, and 2419 connections (80.71% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.13.0.56.2
+Fri Jun 21 03:29:07 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 5 -sphld m -o CS_project_CS_implementation.twr -gui -msgset C:/Users/Denisa/Desktop/GITHUB/Incercari/Implementare/diamond/promote.xml CS_project_CS_implementation.ncd CS_project_CS_implementation.prf 
+Design file:     cs_project_cs_implementation.ncd
+Preference file: cs_project_cs_implementation.prf
+Device,speed:    LCMXO3D-9400HC,m
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+BLOCK JTAG PATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 17776 paths, 3 nets, and 2420 connections (80.75% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 0 (setup), 0 (hold)
+Score: 0 (setup), 0 (hold)
+Cumulative negative slack: 0 (0+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+Total CPU Time: 2 secs 
+Total REAL Time: 3 secs 
+Peak Memory Usage: 79 MB
+
+
+trce -f "CS_project_CS_implementation.pt" -o "CS_project_CS_implementation_pwc.twr" "CS_project_CS_implementation.ncd" "CS_project_CS_implementation.prf"
+trce:  version Diamond (64-bit) 3.13.0.56.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application trce from file cs_project_cs_implementation.ncd.
+Design name: CS
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO3D-9400HC
+Package:     CABGA256
+Performance: 5
+Loading device for application trce from file 'se5c9400.nph' in environment: D:/diamond/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 7.
+Performance Hardware Data Status:   Final          Version 2.2.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.13.0.56.2
+Fri Jun 21 03:29:08 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 5 -sphld m -o CS_project_CS_implementation_pwc.twr -gui -msgset C:/Users/Denisa/Desktop/GITHUB/Incercari/Implementare/diamond/promote.xml CS_project_CS_implementation.ncd CS_project_CS_implementation.prf 
+Design file:     cs_project_cs_implementation.ncd
+Preference file: cs_project_cs_implementation.prf
+Device,speed:    LCMXO3D-9400HC,5
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+BLOCK JTAG PATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 17776 paths, 3 nets, and 2419 connections (80.71% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.13.0.56.2
+Fri Jun 21 03:29:09 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 5 -sphld m -o CS_project_CS_implementation_pwc.twr -gui -msgset C:/Users/Denisa/Desktop/GITHUB/Incercari/Implementare/diamond/promote.xml CS_project_CS_implementation.ncd CS_project_CS_implementation.prf 
+Design file:     cs_project_cs_implementation.ncd
+Preference file: cs_project_cs_implementation.prf
+Device,speed:    LCMXO3D-9400HC,m
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+BLOCK JTAG PATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 17776 paths, 3 nets, and 2420 connections (80.75% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 0 (setup), 0 (hold)
+Score: 0 (setup), 0 (hold)
+Cumulative negative slack: 0 (0+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+Total CPU Time: 2 secs 
+Total REAL Time: 3 secs 
+Peak Memory Usage: 79 MB
+
+
+thermalanalysis -ncd "CS_project_CS_implementation.ncd" -twr "CS_project_CS_implementation_pwc.twr" -o "CS_project_CS_implementation.pwrp" -freq 12 
+
+Loading design for application Thermal Analysis from file CS_project_CS_implementation.ncd.
+Design name: CS
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO3D-9400HC
+Package:     CABGA256
+Performance: 5
+Loading device for application Thermal Analysis from file 'se5c9400.nph' in environment: D:/diamond/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 7.
+Performance Hardware Data Status:   Final          Version 2.2.
+Finish process design CS
+#:#:COMBINATORIAL:###
+#:#:COMBINATORIAL:###
+
+poweraccess has run successfully.
+
+Current working directory: C:\Users\Denisa\Desktop\GITHUB\Incercari\Implementare\diamond\CS_implementation
+
+Design and Device Details
+--------------------------
+Family: MachXO3D
+Device: LCMXO3D-9400HC
+Package: CABGA256
+Performance Grade: 5
+Operating Conditions: Commercial
+Part Number: LCMXO3D-9400HC_CABGA256
+Process Type: Worst
+
+Clock Frequency used by TWR
+----------------------------------------------------------
+Clock                                  |   Frequency (MHz)
+----------------------------------------------------------
+clk_VGA                                |   48
+clk_c                                  |   12
+----------------------------------------------------------
+Clock Frequency used by User Setting: 12 MHz
+
+Note: Use clock frequency from twr file, but use default clock frequency 
+      set in Thermal Analysis of Strategy for clocks which are not in twr file.
+
+Active Factor: 12.5%
+
+Used LUT: 810
+Total LUT: 9400
+% LUT Utilization: 8.62%
+
+Used IO: 34
+Total IO: 207
+% IO Utilization: 16.43%
+
+VCC=3.3V
+---------------------------------------------------------------------------------------------------------------------------------------------
+Board Selection     |   Heat Sink                |   Air Flow       |   Theta-JA (C/W)  |   Total Power (W)     |   Maximum Safe Ambient (C)
+---------------------------------------------------------------------------------------------------------------------------------------------
+JEDEC Board (2S2P)  |   No Heat Sink             |   0 LFM          |   27.9            |   0.269037            |   64.00
+JEDEC Board (2S2P)  |   Low Profile Heat Sink    |   200 LFM        |   20.58           |   0.261315            |   69.51
+JEDEC Board (2S2P)  |   Medium Profile Heat Sink |   200 LFM        |   19.93           |   0.260649            |   70.00
+JEDEC Board (2S2P)  |   High Profile Heat Sink   |   200 LFM        |   19.22           |   0.259986            |   70.53
+Small Board         |   No Heat Sink             |   0 LFM          |   15.6            |   0.256558            |   73.26
+Medium Board        |   No Heat Sink             |   0 LFM          |   13.82           |   0.254948            |   74.60
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+VCC=2.5V
+---------------------------------------------------------------------------------------------------------------------------------------------
+Board Selection     |   Heat Sink                |   Air Flow       |   Theta-JA (C/W)  |   Total Power (W)     |   Maximum Safe Ambient (C)
+---------------------------------------------------------------------------------------------------------------------------------------------
+JEDEC Board (2S2P)  |   No Heat Sink             |   0 LFM          |   27.9            |   0.200029            |   69.03
+JEDEC Board (2S2P)  |   Low Profile Heat Sink    |   200 LFM        |   20.58           |   0.195962            |   73.22
+JEDEC Board (2S2P)  |   Medium Profile Heat Sink |   200 LFM        |   19.93           |   0.195630            |   73.59
+JEDEC Board (2S2P)  |   High Profile Heat Sink   |   200 LFM        |   19.22           |   0.195247            |   74.00
+Small Board         |   No Heat Sink             |   0 LFM          |   15.6            |   0.193408            |   76.07
+Medium Board        |   No Heat Sink             |   0 LFM          |   13.82           |   0.192515            |   77.09
+---------------------------------------------------------------------------------------------------------------------------------------------
+ibisgen "CS_project_CS_implementation.pad" "D:/diamond/diamond/3.13/cae_library/ibis/machxo3d.ibs"   
+IBIS Models Generator: Lattice Diamond (64-bit) 3.13.0.56.2
+
+Fri Jun 21 03:29:49 2024
+
+Comp: BLUE[0]
+ Site: F2
+ Type: OUT
+ IO_TYPE=LVCMOS33 
+ DRIVE=8mA 
+ PULL=UP 
+ SLEW=FAST 
+-----------------------
+Comp: BLUE[1]
+ Site: F1
+ Type: OUT
+ IO_TYPE=LVCMOS33 
+ DRIVE=8mA 
+ PULL=UP 
+ SLEW=FAST 
+-----------------------
+Comp: BLUE[2]
+ Site: T5
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=FAST 
+-----------------------
+Comp: BLUE[3]
+ Site: L7
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=FAST 
+-----------------------
+Comp: GREEN[0]
+ Site: G2
+ Type: OUT
+ IO_TYPE=LVCMOS33 
+ DRIVE=8mA 
+ PULL=UP 
+ SLEW=FAST 
+-----------------------
+Comp: GREEN[1]
+ Site: H2
+ Type: OUT
+ IO_TYPE=LVCMOS33 
+ DRIVE=8mA 
+ PULL=UP 
+ SLEW=FAST 
+-----------------------
+Comp: GREEN[2]
+ Site: J3
+ Type: OUT
+ IO_TYPE=LVCMOS33 
+ DRIVE=8mA 
+ PULL=UP 
+ SLEW=FAST 
+-----------------------
+Comp: GREEN[3]
+ Site: R6
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=FAST 
+-----------------------
+Comp: HSYNC
+ Site: J1
+ Type: OUT
+ IO_TYPE=LVCMOS33 
+ DRIVE=8mA 
+ PULL=UP 
+ SLEW=FAST 
+-----------------------
+Comp: LEDS[0]
+ Site: H11
+ Type: OUT
+ IO_TYPE=LVCMOS33 
+ DRIVE=8mA 
+ PULL=UP 
+ SLEW=FAST 
+-----------------------
+Comp: LEDS[1]
+ Site: J13
+ Type: OUT
+ IO_TYPE=LVCMOS33 
+ DRIVE=8mA 
+ PULL=UP 
+ SLEW=FAST 
+-----------------------
+Comp: LEDS[2]
+ Site: J11
+ Type: OUT
+ IO_TYPE=LVCMOS33 
+ DRIVE=8mA 
+ PULL=UP 
+ SLEW=FAST 
+-----------------------
+Comp: LEDS[3]
+ Site: L12
+ Type: OUT
+ IO_TYPE=LVCMOS33 
+ DRIVE=8mA 
+ PULL=UP 
+ SLEW=FAST 
+-----------------------
+Comp: LEDS[4]
+ Site: K11
+ Type: OUT
+ IO_TYPE=LVCMOS33 
+ DRIVE=8mA 
+ PULL=UP 
+ SLEW=FAST 
+-----------------------
+Comp: LEDS[5]
+ Site: L13
+ Type: OUT
+ IO_TYPE=LVCMOS33 
+ DRIVE=8mA 
+ PULL=UP 
+ SLEW=FAST 
+-----------------------
+Comp: LEDS[6]
+ Site: N15
+ Type: OUT
+ IO_TYPE=LVCMOS33 
+ DRIVE=8mA 
+ PULL=UP 
+ SLEW=FAST 
+-----------------------
+Comp: LEDS[7]
+ Site: P16
+ Type: OUT
+ IO_TYPE=LVCMOS33 
+ DRIVE=8mA 
+ PULL=UP 
+ SLEW=FAST 
+-----------------------
+Comp: RED[0]
+ Site: G1
+ Type: OUT
+ IO_TYPE=LVCMOS33 
+ DRIVE=8mA 
+ PULL=UP 
+ SLEW=FAST 
+-----------------------
+Comp: RED[1]
+ Site: H1
+ Type: OUT
+ IO_TYPE=LVCMOS33 
+ DRIVE=8mA 
+ PULL=UP 
+ SLEW=FAST 
+-----------------------
+Comp: RED[2]
+ Site: H3
+ Type: OUT
+ IO_TYPE=LVCMOS33 
+ DRIVE=8mA 
+ PULL=UP 
+ SLEW=FAST 
+-----------------------
+Comp: RED[3]
+ Site: N6
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=FAST 
+-----------------------
+Comp: VSYNC
+ Site: J2
+ Type: OUT
+ IO_TYPE=LVCMOS33 
+ DRIVE=8mA 
+ PULL=UP 
+ SLEW=FAST 
+-----------------------
+Comp: btnHS
+ Site: P1
+ Type: IN
+ IO_TYPE=LVCMOS33 
+ PULL=UP 
+ CLAMP=ON 
+ HYSTERESIS=SMALL 
+-----------------------
+Comp: btnUART
+ Site: N2
+ Type: IN
+ IO_TYPE=LVCMOS33 
+ PULL=UP 
+ CLAMP=ON 
+ HYSTERESIS=SMALL 
+-----------------------
+Comp: btnVGA
+ Site: R1
+ Type: IN
+ IO_TYPE=LVCMOS33 
+ PULL=UP 
+ CLAMP=ON 
+ HYSTERESIS=SMALL 
+-----------------------
+Comp: btnVS
+ Site: P2
+ Type: IN
+ IO_TYPE=LVCMOS33 
+ PULL=UP 
+ CLAMP=ON 
+ HYSTERESIS=SMALL 
+-----------------------
+Comp: clk
+ Site: C8
+ Type: IN
+ IO_TYPE=LVCMOS33 
+ CLAMP=ON 
+ HYSTERESIS=SMALL 
+-----------------------
+Comp: in
+ Site: F5
+ Type: IN
+ IO_TYPE=LVCMOS33 
+ PULL=UP 
+ CLAMP=ON 
+ HYSTERESIS=SMALL 
+-----------------------
+Comp: out
+ Site: E3
+ Type: OUT
+ IO_TYPE=LVCMOS33 
+ DRIVE=8mA 
+ PULL=UP 
+ SLEW=FAST 
+-----------------------
+Comp: rst_n
+ Site: T2
+ Type: IN
+ IO_TYPE=LVCMOS25 
+ PULL=DOWN 
+ CLAMP=ON 
+ HYSTERESIS=SMALL 
+-----------------------
+Created design models.
+
+
+Generating: C:\Users\Denisa\Desktop\GITHUB\Incercari\Implementare\diamond\CS_implementation\IBIS\CS_project_CS_imple~.ibs
+
+
+    <postMsg mid="1191031" type="Info"    dynamic="0" navigation="0"  />
+
+ldbanno "CS_project_CS_implementation.ncd" -n Verilog  -o "CS_project_CS_implementation_vo.vo"         -w -neg
+ldbanno: version Diamond (64-bit) 3.13.0.56.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Writing a Verilog netlist using the orca library type based on the CS_project_CS_implementation design file.
+
+
+Loading design for application ldbanno from file CS_project_CS_implementation.ncd.
+Design name: CS
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO3D-9400HC
+Package:     CABGA256
+Performance: 5
+Loading device for application ldbanno from file 'se5c9400.nph' in environment: D:/diamond/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 7.
+Performance Hardware Data Status:   Final          Version 2.2.
+Converting design CS_project_CS_implementation.ncd into .ldb format.
+Loading preferences from cs_project_cs_implementation.prf.
+Writing Verilog netlist to file CS_project_CS_implementation_vo.vo
+Writing SDF timing to file CS_project_CS_implementation_vo.sdf
+    <postMsg mid="35400250" type="Info"    dynamic="1" navigation="0" arg0="0"  />
+Total CPU Time: 3 secs 
+Total REAL Time: 3 secs 
+Peak Memory Usage: 72 MB
+
+ldbanno "CS_project_CS_implementation.ncd" -n VHDL -o "CS_project_CS_implementation_vho.vho"         -w -neg 
+ldbanno: version Diamond (64-bit) 3.13.0.56.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Writing a VHDL netlist using the orca library type based on the CS_project_CS_implementation design file.
+
+
+Loading design for application ldbanno from file CS_project_CS_implementation.ncd.
+Design name: CS
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO3D-9400HC
+Package:     CABGA256
+Performance: 5
+Loading device for application ldbanno from file 'se5c9400.nph' in environment: D:/diamond/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 7.
+Performance Hardware Data Status:   Final          Version 2.2.
+Converting design CS_project_CS_implementation.ncd into .ldb format.
+Loading preferences from cs_project_cs_implementation.prf.
+    <postMsg mid="35400209" type="Warning" dynamic="3" navigation="0" arg0="DEFAULT" arg1="-1" arg2="Keyword"  />
+    <postMsg mid="35400209" type="Warning" dynamic="3" navigation="0" arg0="ASSERT" arg1="-1" arg2="Keyword"  />
+Writing VHDL netlist to file CS_project_CS_implementation_vho.vho
+Writing SDF timing to file CS_project_CS_implementation_vho.sdf
+    <postMsg mid="35400250" type="Info"    dynamic="1" navigation="0" arg0="0"  />
+Total CPU Time: 3 secs 
+Total REAL Time: 3 secs 
+Peak Memory Usage: 73 MB
+
+tmcheck -par "CS_project_CS_implementation.par" 
+
+bitgen -f "CS_project_CS_implementation.t2b" -w "CS_project_CS_implementation.ncd" -s "../security_setting/CS_project.secproj" "CS_project_CS_implementation.prf"
+
+
+BITGEN: Bitstream Generator Diamond (64-bit) 3.13.0.56.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+    <postMsg mid="1081328" type="Warning" dynamic="0" navigation="0"  />
+
+Loading design for application Bitgen from file CS_project_CS_implementation.ncd.
+Design name: CS
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO3D-9400HC
+Package:     CABGA256
+Performance: 5
+Loading device for application Bitgen from file 'se5c9400.nph' in environment: D:/diamond/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 7.
+Performance Hardware Data Status:   Final          Version 2.2.
+
+Running DRC.
+DRC detected 0 errors and 0 warnings.
+Reading Preference File from CS_project_CS_implementation.prf.
+    <postMsg mid="1009992" type="Info"    dynamic="1" navigation="0" arg0=" SW_XO3D_SECURITY_ENCRYPTION *IS* controlled by se5c00.acd ###"  />
+    <postMsg mid="1009991" type="Warning" dynamic="1" navigation="0" arg0=" SW_XO3D_SECURITY_ENCRYPTION license_securityIP NONE"  />
+
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+|                         RamCfg  |                        Reset**  |
++---------------------------------+---------------------------------+
+|                     MCCLK_FREQ  |                           66.5  |
++---------------------------------+---------------------------------+
+|                  CONFIG_SECURE  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                          INBUF  |                           ON**  |
++---------------------------------+---------------------------------+
+|                      JTAG_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                       SDM_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                 SLAVE_SPI_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                MASTER_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                       I2C_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|        MUX_CONFIGURATION_PORTS  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  CONFIGURATION  |                          CFG**  |
++---------------------------------+---------------------------------+
+|                COMPRESS_CONFIG  |                           ON**  |
++---------------------------------+---------------------------------+
+|                        MY_ASSP  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                 ENABLE_TRANSFR  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  SHAREDEBRINIT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|            BACKGROUND_RECONFIG  |                          OFF**  |
++---------------------------------+---------------------------------+
+|       CUR_DESIGN_BOOT_LOCATION  |                      IMAGE_0**  |
++---------------------------------+---------------------------------+
+|   BACKGROUND_RECONFIG_SECURITY  |                          OFF**  |
++---------------------------------+---------------------------------+
+|               SLAVE_IDLE_TIMER  |                            0**  |
++---------------------------------+---------------------------------+
+|MASTER_PREAMBLE_DETECTION_TIMER  |                            0**  |
++---------------------------------+---------------------------------+
+|MASTER_PREAMBLE_DETECTION_RETRY  |                            0**  |
++---------------------------------+---------------------------------+
+|                     SFDP_CHECK  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|             SPIM_ADDRESS_32BIT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                   PRIMARY_BOOT  |                      IMAGE_0**  |
++---------------------------------+---------------------------------+
+|                 SECONDARY_BOOT  |                         NONE**  |
++---------------------------------+---------------------------------+
+|               ROLLBACK_CONTROL  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|              I2C_GLITCH_FILTER  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|        I2C_GLITCH_FILTER_RANGE  |                    R_16_50NS**  |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+Creating bit map...
+Saving bit stream in "CS_project_CS_implementation.bit".
+EBR: BITGEN_DUMMY_COMP_EBR_R8C1 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C4 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C7 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C10 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C13 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C16 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C19 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C22 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C26 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C29 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C32 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C35 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C38 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C41 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C44 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C47 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C1 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C4 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C7 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C10 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C13 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C16 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C19 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C22 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C26 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C29 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C32 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C35 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C38 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C41 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C44 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C47 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C1 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C4 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C7 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C10 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C13 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C16 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C19 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C22 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C26 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C29 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C32 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C35 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C38 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C41 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C44 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C47 => WID = 0b0000000000, its value = 0
+Total CPU Time: 3 secs 
+Total REAL Time: 5 secs 
+Peak Memory Usage: 197 MB
+
+tmcheck -par "CS_project_CS_implementation.par" 
+
+bitgen -f "CS_project_CS_implementation.t2b" -w "CS_project_CS_implementation.ncd" -s "../security_setting/CS_project.secproj" -jedec "CS_project_CS_implementation.prf"
+
+
+BITGEN: Bitstream Generator Diamond (64-bit) 3.13.0.56.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+    <postMsg mid="1081328" type="Warning" dynamic="0" navigation="0"  />
+
+Loading design for application Bitgen from file CS_project_CS_implementation.ncd.
+Design name: CS
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO3D-9400HC
+Package:     CABGA256
+Performance: 5
+Loading device for application Bitgen from file 'se5c9400.nph' in environment: D:/diamond/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 7.
+Performance Hardware Data Status:   Final          Version 2.2.
+
+Running DRC.
+DRC detected 0 errors and 0 warnings.
+Reading Preference File from CS_project_CS_implementation.prf.
+    <postMsg mid="1009992" type="Info"    dynamic="1" navigation="0" arg0=" SW_XO3D_SECURITY_ENCRYPTION *IS* controlled by se5c00.acd ###"  />
+    <postMsg mid="1009991" type="Warning" dynamic="1" navigation="0" arg0=" SW_XO3D_SECURITY_ENCRYPTION license_securityIP NONE"  />
+
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+|                         RamCfg  |                        Reset**  |
++---------------------------------+---------------------------------+
+|                     MCCLK_FREQ  |                           66.5  |
++---------------------------------+---------------------------------+
+|                  CONFIG_SECURE  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                          INBUF  |                           ON**  |
++---------------------------------+---------------------------------+
+|                      JTAG_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                       SDM_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                 SLAVE_SPI_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                MASTER_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                       I2C_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|        MUX_CONFIGURATION_PORTS  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  CONFIGURATION  |                          CFG**  |
++---------------------------------+---------------------------------+
+|                COMPRESS_CONFIG  |                           ON**  |
++---------------------------------+---------------------------------+
+|                        MY_ASSP  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                 ENABLE_TRANSFR  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  SHAREDEBRINIT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|            BACKGROUND_RECONFIG  |                          OFF**  |
++---------------------------------+---------------------------------+
+|       CUR_DESIGN_BOOT_LOCATION  |                      IMAGE_0**  |
++---------------------------------+---------------------------------+
+|   BACKGROUND_RECONFIG_SECURITY  |                          OFF**  |
++---------------------------------+---------------------------------+
+|               SLAVE_IDLE_TIMER  |                            0**  |
++---------------------------------+---------------------------------+
+|MASTER_PREAMBLE_DETECTION_TIMER  |                            0**  |
++---------------------------------+---------------------------------+
+|MASTER_PREAMBLE_DETECTION_RETRY  |                            0**  |
++---------------------------------+---------------------------------+
+|                     SFDP_CHECK  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|             SPIM_ADDRESS_32BIT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                   PRIMARY_BOOT  |                      IMAGE_0**  |
++---------------------------------+---------------------------------+
+|                 SECONDARY_BOOT  |                         NONE**  |
++---------------------------------+---------------------------------+
+|               ROLLBACK_CONTROL  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|              I2C_GLITCH_FILTER  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|        I2C_GLITCH_FILTER_RANGE  |                    R_16_50NS**  |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+Creating bit map...
+Saving bit stream in "CS_project_CS_implementation_a.jed".
+ 
+===========
+UFM Summary.
+===========
+UFM Size:        3582 Pages (128*3582 Bits).
+EBR: BITGEN_DUMMY_COMP_EBR_R8C1 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C4 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C7 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C10 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C13 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C16 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C19 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C22 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C26 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C29 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C32 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C35 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C38 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C41 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C44 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C47 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C1 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C4 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C7 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C10 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C13 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C16 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C19 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C22 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C26 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C29 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C32 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C35 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C38 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C41 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C44 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C47 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C1 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C4 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C7 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C10 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C13 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C16 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C19 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C22 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C26 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C29 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C32 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C35 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C38 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C41 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C44 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C47 => WID = 0b0000000000, its value = 0
+UFM Utilization: General Purpose Flash Memory.
+ 
+Available General Purpose Flash Memory: 3582 Pages (Page 0 to Page 3581).
+Initialized UFM Pages:                     0 Page.
+ 
+=========
+Padding summary
+=========
+Padded 1723520 bits for this design
+
+
+Jedec File [0]: CS_project_CS_implementation.fea
+Jedec File [1]: CS_project_CS_implementation_a.jed
+Total CPU Time: 4 secs 
+Total REAL Time: 5 secs 
+Peak Memory Usage: 197 MB

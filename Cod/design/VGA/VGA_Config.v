@@ -1,16 +1,16 @@
-`timescale 1 ns/1 ns 
+ 
 /* 
  Module Name:   Config  
 
- 	This module provides parameters for the other modules that forms the VGA_Control module. Each configuration 
+ 	This module provides parameters for the other modules that forms the VGA module. Each configuration 
 has it's own constants.
-When the configuration bus has a new configuration for the VGA_Control, the registers containing information for 
+When the configuration bus has a new configuration for the VGA, the registers containing information for 
 a specific resolution are changed according to https:web.mit.edu/6.111/www/s2004/NEWKIT/vga.shtml, 60Hz ones. 
  
 	The parameters can be found in the Parameters.v file, also there are more details about them. 
-	The Valid, Addr and Data inputs are the same as the C_valid, C_addr and C_data inputs for the VGA_Control.
-	Load_config is a special output, it has a rol in the Couunters reset and also for the output of the VGA_Control
-	C_rdy and is active only where the VGA_Control receive a new valid documentation. 
+	The Valid, Addr and Data inputs are the same as the c_valid, c_addr and c_data inputs for the VGA.
+	Load_config is a special output, it has a rol in the Couunters reset and also for the output of the VGA
+	c_ready and is active only where the VGA receive a new valid documentation. 
 */
 
 `define R6X4  2'b00
@@ -22,8 +22,8 @@ module VGA_Config
 	#(`include "../PARAM/VGA_Width_Parameters.v",
 	  `include "../PARAM/VGA_Parameters.v",
 	  `include "../PARAM/VGA_Addr_Parameters.v")
-	(input Clk,
-	input Rst,
+	(input clk,
+	input rst_n,
 	input Valid,
 	input [CONFIG_WIDTH-1:0] Addr,
 	input [CONFIG_WIDTH-1:0] Data,
@@ -49,9 +49,9 @@ module VGA_Config
 	reg     [REZ_MAX_WIDTH-1:0] 	H_Count_Max_reg, H_Count_Max_nxt;
 	reg     [REZ_MAX_WIDTH-1:0]  	V_Count_Max_reg, V_Count_Max_nxt;
 	
-	always@(posedge Clk or posedge Rst)
+	always@(posedge clk or negedge rst_n)
 	begin
-		if(Rst)
+		if(~rst_n)
 		begin
 			Load_reg    		<= 1;
 			H_Left_Margin_reg   <= H_Left_Margin_RD;

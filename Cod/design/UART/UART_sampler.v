@@ -6,13 +6,13 @@
 // If the majority of the samples are the same then the output is validated.
 //----------------------------------------------------------------------------------------------
 
-`timescale 1 ns/1 ns
+
  
 module UART_sampler
 #(`include "../PARAM/UART_params.v")
 (
 input clk,
-input rst,
+input rst_n,
 
 input in,
 input stop,
@@ -29,8 +29,8 @@ reg out_reg, out_next;
 reg valid_reg, valid_next;
 reg flag_reg, flag_next;
 
-always @(posedge clk or posedge rst) begin
-	if(rst) begin
+always @(posedge clk or negedge rst_n) begin
+	if(~rst_n) begin
 		nr_0_reg  <= 'b0;
 		nr_1_reg  <= 'b0;
 		val_reg   <= 'b0;

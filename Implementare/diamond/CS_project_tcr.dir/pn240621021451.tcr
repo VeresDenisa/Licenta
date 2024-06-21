@@ -1,0 +1,9 @@
+#Start recording tcl command: 6/21/2024 01:55:08
+#Project Location: C:/Users/Denisa/Desktop/GITHUB/Incercari/Implementare/diamond; Project name: CS_project
+prj_project open "C:/Users/Denisa/Desktop/GITHUB/Incercari/Implementare/diamond/CS_project.ldf"
+prj_run Export -impl CS_implementation
+prj_src add "C:/Users/Denisa/Desktop/GITHUB/Incercari/Implementare/diamond/UART_PLL.v"
+prj_run Export -impl CS_implementation
+prj_project save
+prj_project close
+#Stop recording: 6/21/2024 02:14:51
