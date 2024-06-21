@@ -20,13 +20,13 @@ Daca toti bitii verificati (START, PARITY, STOP) sunt valizi, atunci counicarea 
 *///----------------------------------------------------------------------------------------------
 
 
-`timescale 1 ns/1 ns
+
 
 module UART_state
   #(`include "../PARAM/UART_params.v")
 (
 input clk,
-input rst,
+input rst_n,
 
 input parity_bit_config,
 input stop_bit_config,
@@ -63,8 +63,8 @@ reg                             parity_check_reg, parity_check_next;
 reg [WIDHT_PARITY_STOP_BITS-1:0]stop_iteration_step_reg, stop_iteration_step_next;
 reg [WIDTH_IDLE_BITS-1:0]       wait_iteration_step_reg, wait_iteration_step_next;
 
-always @(posedge clk or posedge rst) begin
-	if(rst) begin
+always @(posedge clk or negedge rst_n) begin
+	if(~rst_n) begin
 		state_reg               <= IDLE;
 		error_reg               <= NO_ERRORS;
 		out_reg                 <= 'b0;

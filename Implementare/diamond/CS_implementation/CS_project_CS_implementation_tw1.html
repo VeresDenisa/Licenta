@@ -1,0 +1,507 @@
+<HTML>
+<HEAD><TITLE>Lattice Map TRACE Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Map_Twr"></A><B><U><big>Map TRACE Report</big></U></B>
+
+Loading design for application trce from file cs_project_cs_implementation_map.ncd.
+Design name: CS
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO3D-9400HC
+Package:     CABGA256
+Performance: 5
+Loading device for application trce from file 'se5c9400.nph' in environment: D:/diamond/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 7.
+Performance Hardware Data Status:   Final          Version 2.2.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+<A name="Map_Twr_setup"></A><B><U><big>Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.13.0.56.2</big></U></B>
+Fri Jun 21 03:28:06 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="mtw1_set_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o CS_project_CS_implementation.tw1 -gui -msgset C:/Users/Denisa/Desktop/GITHUB/Incercari/Implementare/diamond/promote.xml CS_project_CS_implementation_map.ncd CS_project_CS_implementation.prf 
+Design file:     cs_project_cs_implementation_map.ncd
+Preference file: cs_project_cs_implementation.prf
+Device,speed:    LCMXO3D-9400HC,5
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+<A name="mtw1_set_ps"></A><B><U><big>Preference Summary</big></U></B>
+
+<LI><A href='#map_twr_pref_0_0' Target='right'>FREQUENCY NET "clk_c" 12.000000 MHz (0 errors)</A></LI>            4096 items scored, 0 timing errors detected.
+Report:   20.092MHz is the maximum frequency for this preference.
+
+<LI><A href='#map_twr_pref_0_1' Target='right'>FREQUENCY NET "clk_VGA" 48.000000 MHz (0 errors)</A></LI>            101 items scored, 0 timing errors detected.
+Report:  205.128MHz is the maximum frequency for this preference.
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+BLOCK JTAG PATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+<A name="map_twr_pref_0_0"></A>Preference: FREQUENCY NET "clk_c" 12.000000 MHz ;
+            4096 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 8.391ns (weighted slack = 33.564ns)
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              cd/CLOCK_DIVIDER_CONFIG/baudrate_reg_i0_i0  (from clk_VGA +)
+   Destination:    FF         Data in        uart/SAMPLER/nr_1_reg_976__i1  (to clk_c +)
+                   FF                        uart/SAMPLER/nr_1_reg_976__i0
+
+   Delay:              12.194ns  (49.2% logic, 50.8% route), 18 logic levels.
+
+ Constraint Details:
+
+     12.194ns physical path delay SLICE_285 to uart/SAMPLER/SLICE_369 meets
+     20.834ns delay constraint less
+      0.249ns CE_SET requirement (totaling 20.585ns) by 8.391ns
+
+ Physical Path Details:
+
+      Data path SLICE_285 to uart/SAMPLER/SLICE_369:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.409  SLICE_285.CLK to   SLICE_285.Q0 SLICE_285 (from clk_VGA)
+ROUTE         1   e 1.030   SLICE_285.Q0 to */SLICE_125.A1 cd/baudrate_0
+C1TOFCO_DE  ---     0.786 */SLICE_125.A1 to *SLICE_125.FCO cd/CNT_UART/SLICE_125
+ROUTE         1   e 0.001 *SLICE_125.FCO to *SLICE_124.FCI cd/CNT_UART/n6187
+FCITOF0_DE  ---     0.517 *SLICE_124.FCI to */SLICE_124.F0 cd/CNT_UART/SLICE_124
+ROUTE         1   e 1.030 */SLICE_124.F0 to    SLICE_74.B0 counter_23_N_178_1
+C0TOFCO_DE  ---     0.905    SLICE_74.B0 to   SLICE_74.FCO SLICE_74
+ROUTE         1   e 0.001   SLICE_74.FCO to   SLICE_73.FCI n6219
+FCITOFCO_D  ---     0.146   SLICE_73.FCI to   SLICE_73.FCO SLICE_73
+ROUTE         1   e 0.001   SLICE_73.FCO to   SLICE_72.FCI n6220
+FCITOFCO_D  ---     0.146   SLICE_72.FCI to   SLICE_72.FCO SLICE_72
+ROUTE         1   e 0.001   SLICE_72.FCO to   SLICE_71.FCI n6221
+FCITOFCO_D  ---     0.146   SLICE_71.FCI to   SLICE_71.FCO SLICE_71
+ROUTE         1   e 0.001   SLICE_71.FCO to   SLICE_70.FCI n6222
+FCITOFCO_D  ---     0.146   SLICE_70.FCI to   SLICE_70.FCO SLICE_70
+ROUTE         1   e 0.001   SLICE_70.FCO to   SLICE_69.FCI n6223
+FCITOFCO_D  ---     0.146   SLICE_69.FCI to   SLICE_69.FCO SLICE_69
+ROUTE         1   e 0.001   SLICE_69.FCO to   SLICE_68.FCI n6224
+FCITOFCO_D  ---     0.146   SLICE_68.FCI to   SLICE_68.FCO SLICE_68
+ROUTE         1   e 0.001   SLICE_68.FCO to   SLICE_67.FCI n6225
+FCITOFCO_D  ---     0.146   SLICE_67.FCI to   SLICE_67.FCO SLICE_67
+ROUTE         1   e 0.001   SLICE_67.FCO to   SLICE_66.FCI n6226
+FCITOFCO_D  ---     0.146   SLICE_66.FCI to   SLICE_66.FCO SLICE_66
+ROUTE         1   e 0.001   SLICE_66.FCO to   SLICE_65.FCI n6227
+FCITOFCO_D  ---     0.146   SLICE_65.FCI to   SLICE_65.FCO SLICE_65
+ROUTE         1   e 0.001   SLICE_65.FCO to   SLICE_64.FCI n6228
+FCITOFCO_D  ---     0.146   SLICE_64.FCI to   SLICE_64.FCO SLICE_64
+ROUTE         1   e 0.001   SLICE_64.FCO to   SLICE_63.FCI n6229
+FCITOF1_DE  ---     0.569   SLICE_63.FCI to    SLICE_63.F1 SLICE_63
+ROUTE        30   e 1.030    SLICE_63.F1 to   SLICE_474.A1 n1553
+CTOF_DEL    ---     0.452   SLICE_474.A1 to   SLICE_474.F1 SLICE_474
+ROUTE         2   e 1.030   SLICE_474.F1 to   SLICE_476.B0 n7320
+CTOF_DEL    ---     0.452   SLICE_476.B0 to   SLICE_476.F0 SLICE_476
+ROUTE         4   e 1.030   SLICE_476.F0 to   SLICE_384.B1 clk_c_enable_153
+CTOF_DEL    ---     0.452   SLICE_384.B1 to   SLICE_384.F1 SLICE_384
+ROUTE         2   e 1.030   SLICE_384.F1 to */SLICE_369.CE clk_c_enable_147 (to clk_c)
+                  --------
+                   12.194   (49.2% logic, 50.8% route), 18 logic levels.
+
+Report:   20.092MHz is the maximum frequency for this preference.
+
+
+================================================================================
+<A name="map_twr_pref_0_1"></A>Preference: FREQUENCY NET "clk_VGA" 48.000000 MHz ;
+            101 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 15.958ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              cm/configCM/c_addr_reg_i2  (from clk_c +)
+   Destination:    FF         Data in        cd/CLOCK_DIVIDER_CONFIG/baudrate_reg_i0_i4  (to clk_VGA +)
+
+   Delay:               4.627ns  (38.1% logic, 61.9% route), 4 logic levels.
+
+ Constraint Details:
+
+      4.627ns physical path delay cm/configCM/SLICE_278 to cd/CLOCK_DIVIDER_CONFIG/SLICE_497 meets
+     20.833ns delay constraint less
+      0.248ns LSR_SET requirement (totaling 20.585ns) by 15.958ns
+
+ Physical Path Details:
+
+      Data path cm/configCM/SLICE_278 to cd/CLOCK_DIVIDER_CONFIG/SLICE_497:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.409 *SLICE_278.CLK to */SLICE_278.Q1 cm/configCM/SLICE_278 (from clk_c)
+ROUTE         8   e 1.030 */SLICE_278.Q1 to */SLICE_275.A0 c_addr_2
+CTOF_DEL    ---     0.452 */SLICE_275.A0 to */SLICE_275.F0 cd/CLOCK_DIVIDER_CONFIG/SLICE_275
+ROUTE         4   e 1.030 */SLICE_275.F0 to */SLICE_497.C1 cd/CLOCK_DIVIDER_CONFIG/n7327
+CTOF_DEL    ---     0.452 */SLICE_497.C1 to */SLICE_497.F1 cd/CLOCK_DIVIDER_CONFIG/SLICE_497
+ROUTE         6   e 0.401 */SLICE_497.F1 to */SLICE_497.B0 cd/CLOCK_DIVIDER_CONFIG/clk_VGA_enable_9
+CTOF_DEL    ---     0.452 */SLICE_497.B0 to */SLICE_497.F0 cd/CLOCK_DIVIDER_CONFIG/SLICE_497
+ROUTE         1   e 0.401 */SLICE_497.F0 to *SLICE_497.LSR cd/CLOCK_DIVIDER_CONFIG/n3068 (to clk_VGA)
+                  --------
+                    4.627   (38.1% logic, 61.9% route), 4 logic levels.
+
+Report:  205.128MHz is the maximum frequency for this preference.
+
+<A name="mtw1_set_rs"></A><B><U><big>Report Summary</big></U></B>
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "clk_c" 12.000000 MHz ;   |   12.000 MHz|   20.092 MHz|  18  
+                                        |             |             |
+FREQUENCY NET "clk_VGA" 48.000000 MHz ; |   48.000 MHz|  205.128 MHz|   4  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+<A name="mtw1_set_clkda"></A><B><U><big>Clock Domains Analysis</big></U></B>
+------------------------
+
+Found 10 clocks:
+
+Clock Domain: vga/config1/c_data_1_derived_1   Source: vga/config1/SLICE_428.F0   Loads: 3
+   No transfer within this clock domain is found
+
+Clock Domain: vga/config1/H_Left_Margin_nxt_8__N_967   Source: vga/config1/SLICE_496.F0   Loads: 41
+   No transfer within this clock domain is found
+
+Clock Domain: cm/configCM/State_nxt_2__N_486   Source: cm/configCM/SLICE_511.F0   Loads: 3
+   No transfer within this clock domain is found
+
+Clock Domain: clk_c   Source: clk.PAD   Loads: 218
+   Covered under: FREQUENCY NET "clk_c" 12.000000 MHz ;
+
+   Data transfers from:
+   Clock Domain: vga/config1/c_data_1_derived_1   Source: vga/config1/SLICE_428.F0
+      Covered under: FREQUENCY NET "clk_c" 12.000000 MHz ;   Transfers: 1
+
+   Clock Domain: vga/config1/H_Left_Margin_nxt_8__N_967   Source: vga/config1/SLICE_496.F0
+      Covered under: FREQUENCY NET "clk_c" 12.000000 MHz ;   Transfers: 76
+
+   Clock Domain: cm/configCM/State_nxt_2__N_486   Source: cm/configCM/SLICE_511.F0
+      Covered under: FREQUENCY NET "clk_c" 12.000000 MHz ;   Transfers: 3
+
+   Clock Domain: clk_VGA   Source: basic_4OUT_PLL/PLLInst_0.CLKOP
+      Covered under: FREQUENCY NET "clk_c" 12.000000 MHz ;   Transfers: 12
+
+   Clock Domain: clk_UART   Source: SLICE_292.Q0
+      Covered under: FREQUENCY NET "clk_c" 12.000000 MHz ;   Transfers: 7
+
+   Clock Domain: clk_LM   Source: SLICE_291.Q0
+      Covered under: FREQUENCY NET "clk_c" 12.000000 MHz ;   Transfers: 1
+
+   Clock Domain: clk_DB   Source: SLICE_290.Q0
+      Covered under: FREQUENCY NET "clk_c" 12.000000 MHz ;   Transfers: 8
+
+   Clock Domain: HSYNC_c   Source: vga/CounterH/SLICE_231.Q0
+      Covered under: FREQUENCY NET "clk_c" 12.000000 MHz ;   Transfers: 13
+
+Clock Domain: clk_VGA   Source: basic_4OUT_PLL/PLLInst_0.CLKOP   Loads: 10
+   No transfer within this clock domain is found
+
+   Data transfers from:
+   Clock Domain: clk_c   Source: clk.PAD
+      Covered under: FREQUENCY NET "clk_VGA" 48.000000 MHz ;   Transfers: 8
+
+Clock Domain: clk_UART   Source: SLICE_292.Q0   Loads: 14
+   No transfer within this clock domain is found
+
+Clock Domain: clk_LM   Source: SLICE_291.Q0   Loads: 3
+   No transfer within this clock domain is found
+
+Clock Domain: clk_DB   Source: SLICE_290.Q0   Loads: 12
+   No transfer within this clock domain is found
+
+Clock Domain: basic_4OUT_PLL/CLKFB_t   Source: basic_4OUT_PLL/PLLInst_0.CLKINTFB   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: HSYNC_c   Source: vga/CounterH/SLICE_231.Q0   Loads: 16
+   No transfer within this clock domain is found
+
+
+<A name="mtw1_set_ts"></A><B><U><big>Timing summary (Setup):</big></U></B>
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 17776 paths, 3 nets, and 2170 connections (72.41% coverage)
+
+--------------------------------------------------------------------------------
+<A name="Map_Twr_hold"></A><B><U><big>Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.13.0.56.2</big></U></B>
+Fri Jun 21 03:28:07 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="mtw1_hold_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o CS_project_CS_implementation.tw1 -gui -msgset C:/Users/Denisa/Desktop/GITHUB/Incercari/Implementare/diamond/promote.xml CS_project_CS_implementation_map.ncd CS_project_CS_implementation.prf 
+Design file:     cs_project_cs_implementation_map.ncd
+Preference file: cs_project_cs_implementation.prf
+Device,speed:    LCMXO3D-9400HC,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+<A name="mtw1_hold_ps"></A><B><U><big>Preference Summary</big></U></B>
+
+<LI><A href='#map_twr_pref_1_0' Target='right'>FREQUENCY NET "clk_c" 12.000000 MHz (0 errors)</A></LI>            4096 items scored, 0 timing errors detected.
+
+<LI><A href='#map_twr_pref_1_1' Target='right'>FREQUENCY NET "clk_VGA" 48.000000 MHz (0 errors)</A></LI>            101 items scored, 0 timing errors detected.
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+BLOCK JTAG PATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+<A name="map_twr_pref_1_0"></A>Preference: FREQUENCY NET "clk_c" 12.000000 MHz ;
+            4096 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.447ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              cd/CNT_DB/clkout_17  (from clk_c +)
+   Destination:    FF         Data in        cd/CNT_DB/clkout_17  (to clk_c +)
+
+   Delay:               0.434ns  (53.9% logic, 46.1% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.434ns physical path delay SLICE_290 to SLICE_290 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint requirement (totaling -0.013ns) by 0.447ns
+
+ Physical Path Details:
+
+      Data path SLICE_290 to SLICE_290:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133  SLICE_290.CLK to   SLICE_290.Q0 SLICE_290 (from clk_c)
+ROUTE        12   e 0.199   SLICE_290.Q0 to   SLICE_290.A0 clk_DB
+CTOF_DEL    ---     0.101   SLICE_290.A0 to   SLICE_290.F0 SLICE_290
+ROUTE         1   e 0.001   SLICE_290.F0 to  SLICE_290.DI0 cd/CNT_DB/clkout_N_118 (to clk_c)
+                  --------
+                    0.434   (53.9% logic, 46.1% route), 2 logic levels.
+
+
+================================================================================
+<A name="map_twr_pref_1_1"></A>Preference: FREQUENCY NET "clk_VGA" 48.000000 MHz ;
+            101 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.667ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              cm/configCM/c_data_reg_i0  (from clk_c +)
+   Destination:    FF         Data in        cd/CLOCK_DIVIDER_CONFIG/baudrate_reg_i0_i7  (to clk_VGA +)
+
+   Delay:               0.648ns  (20.5% logic, 79.5% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.648ns physical path delay cm/configCM/SLICE_280 to cd/CLOCK_DIVIDER_CONFIG/SLICE_289 meets
+     -0.019ns M_HLD and
+      0.000ns delay constraint requirement (totaling -0.019ns) by 0.667ns
+
+ Physical Path Details:
+
+      Data path cm/configCM/SLICE_280 to cd/CLOCK_DIVIDER_CONFIG/SLICE_289:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133 *SLICE_280.CLK to */SLICE_280.Q0 cm/configCM/SLICE_280 (from clk_c)
+ROUTE        63   e 0.515 */SLICE_280.Q0 to */SLICE_289.M1 c_data_0 (to clk_VGA)
+                  --------
+                    0.648   (20.5% logic, 79.5% route), 1 logic levels.
+
+<A name="mtw1_hold_rs"></A><B><U><big>Report Summary</big></U></B>
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "clk_c" 12.000000 MHz ;   |     0.000 ns|     0.447 ns|   2  
+                                        |             |             |
+FREQUENCY NET "clk_VGA" 48.000000 MHz ; |     0.000 ns|     0.667 ns|   1  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+<A name="mtw1_hold_clkda"></A><B><U><big>Clock Domains Analysis</big></U></B>
+------------------------
+
+Found 10 clocks:
+
+Clock Domain: vga/config1/c_data_1_derived_1   Source: vga/config1/SLICE_428.F0   Loads: 3
+   No transfer within this clock domain is found
+
+Clock Domain: vga/config1/H_Left_Margin_nxt_8__N_967   Source: vga/config1/SLICE_496.F0   Loads: 41
+   No transfer within this clock domain is found
+
+Clock Domain: cm/configCM/State_nxt_2__N_486   Source: cm/configCM/SLICE_511.F0   Loads: 3
+   No transfer within this clock domain is found
+
+Clock Domain: clk_c   Source: clk.PAD   Loads: 218
+   Covered under: FREQUENCY NET "clk_c" 12.000000 MHz ;
+
+   Data transfers from:
+   Clock Domain: vga/config1/c_data_1_derived_1   Source: vga/config1/SLICE_428.F0
+      Covered under: FREQUENCY NET "clk_c" 12.000000 MHz ;   Transfers: 1
+
+   Clock Domain: vga/config1/H_Left_Margin_nxt_8__N_967   Source: vga/config1/SLICE_496.F0
+      Covered under: FREQUENCY NET "clk_c" 12.000000 MHz ;   Transfers: 76
+
+   Clock Domain: cm/configCM/State_nxt_2__N_486   Source: cm/configCM/SLICE_511.F0
+      Covered under: FREQUENCY NET "clk_c" 12.000000 MHz ;   Transfers: 3
+
+   Clock Domain: clk_VGA   Source: basic_4OUT_PLL/PLLInst_0.CLKOP
+      Covered under: FREQUENCY NET "clk_c" 12.000000 MHz ;   Transfers: 12
+
+   Clock Domain: clk_UART   Source: SLICE_292.Q0
+      Covered under: FREQUENCY NET "clk_c" 12.000000 MHz ;   Transfers: 7
+
+   Clock Domain: clk_LM   Source: SLICE_291.Q0
+      Covered under: FREQUENCY NET "clk_c" 12.000000 MHz ;   Transfers: 1
+
+   Clock Domain: clk_DB   Source: SLICE_290.Q0
+      Covered under: FREQUENCY NET "clk_c" 12.000000 MHz ;   Transfers: 8
+
+   Clock Domain: HSYNC_c   Source: vga/CounterH/SLICE_231.Q0
+      Covered under: FREQUENCY NET "clk_c" 12.000000 MHz ;   Transfers: 13
+
+Clock Domain: clk_VGA   Source: basic_4OUT_PLL/PLLInst_0.CLKOP   Loads: 10
+   No transfer within this clock domain is found
+
+   Data transfers from:
+   Clock Domain: clk_c   Source: clk.PAD
+      Covered under: FREQUENCY NET "clk_VGA" 48.000000 MHz ;   Transfers: 8
+
+Clock Domain: clk_UART   Source: SLICE_292.Q0   Loads: 14
+   No transfer within this clock domain is found
+
+Clock Domain: clk_LM   Source: SLICE_291.Q0   Loads: 3
+   No transfer within this clock domain is found
+
+Clock Domain: clk_DB   Source: SLICE_290.Q0   Loads: 12
+   No transfer within this clock domain is found
+
+Clock Domain: basic_4OUT_PLL/CLKFB_t   Source: basic_4OUT_PLL/PLLInst_0.CLKINTFB   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: HSYNC_c   Source: vga/CounterH/SLICE_231.Q0   Loads: 16
+   No transfer within this clock domain is found
+
+
+<A name="mtw1_hold_ts"></A><B><U><big>Timing summary (Hold):</big></U></B>
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 17776 paths, 3 nets, and 2416 connections (80.61% coverage)
+
+
+
+<A name="mtw1_ts"></A><B><U><big>Timing summary (Setup and Hold):</big></U></B>
+---------------
+
+Timing errors: 0 (setup), 0 (hold)
+Score: 0 (setup), 0 (hold)
+Cumulative negative slack: 0 (0+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

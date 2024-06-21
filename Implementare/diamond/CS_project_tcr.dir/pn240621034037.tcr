@@ -1,0 +1,28 @@
+#Start recording tcl command: 6/21/2024 02:15:26
+#Project Location: C:/Users/Denisa/Desktop/GITHUB/Incercari/Implementare/diamond; Project name: CS_project
+prj_project open "C:/Users/Denisa/Desktop/GITHUB/Incercari/Implementare/diamond/CS_project.ldf"
+prj_run Export -impl CS_implementation
+prj_run PAR -impl CS_implementation -task PowerCal
+prj_strgy set_value -strategy Strategy1 thermal_default_clock_frequency=12
+prj_run Export -impl CS_implementation
+prj_run Export -impl CS_implementation
+prj_run Export -impl CS_implementation
+prj_run Export -impl CS_implementation
+prj_run Export -impl CS_implementation
+prj_run Export -impl CS_implementation
+prj_run Export -impl CS_implementation
+prj_run Export -impl CS_implementation
+pgr_project save "C:/Users/Denisa/Desktop/GITHUB/Incercari/Implementare/diamond/CS_implementation/CS_implementation.xcf"
+prj_src add -exclude "C:/Users/Denisa/Desktop/GITHUB/Incercari/Implementare/diamond/CS_implementation/CS_implementation.xcf"
+prj_src enable "C:/Users/Denisa/Desktop/GITHUB/Incercari/Implementare/diamond/CS_implementation/CS_implementation.xcf"
+pgr_program run
+prj_run Export -impl CS_implementation
+pgr_program run
+prj_run Export -impl CS_implementation
+pgr_program run
+prj_run Export -impl CS_implementation
+pgr_program run
+pgr_project save "C:/Users/Denisa/Desktop/GITHUB/Incercari/Implementare/diamond/CS_implementation/CS_implementation.xcf"
+prj_project save
+prj_project close
+#Stop recording: 6/21/2024 03:40:37

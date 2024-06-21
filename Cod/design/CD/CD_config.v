@@ -8,13 +8,13 @@ The configuration resets the counters for the UART/VGA clock. The addresses are:
 The maximum value of the counters for the the UART/VGA clock are sent though baudrate and resolution.
 */
 
-`timescale 1 ns/1 ns 
+ 
 
 module CD_config
   #(`include "../PARAM/CD_params.v")
 (
 input clk,
-input rst,
+input rst_n,
 
 input [WIDTH_CONFIG_ADDR-1:0]c_addr,
 input [WIDTH_CONFIG_DATA-1:0]c_data,
@@ -34,8 +34,8 @@ reg [WIDTH_UART_CLK_LIMIT-1:0] baudrate_reg, baudrate_next;
 reg c_VGA_ready_reg, c_VGA_ready_next;
 reg c_UART_ready_reg, c_UART_ready_next;
 
-always @(posedge clk or posedge rst) begin
-	if(rst) begin
+always @(posedge clk or negedge rst_n) begin
+	if(~rst_n) begin
 		resolution_reg   <= CLK_VGA_640x480;
 		baudrate_reg     <= CLK_BAUDRATE_9600;
 		c_VGA_ready_reg  <= 1'b1;

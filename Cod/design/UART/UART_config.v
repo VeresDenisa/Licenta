@@ -10,13 +10,13 @@
 //    - STOP: 0-1 BIT (default), 1-2 BITS
 //--------------------------------------------------------------------------------------------------
 
-`timescale 1 ns/1 ns
+
 
 module UART_config 
   #(`include "../PARAM/UART_params.v")
 (
 input clk,
-input rst,
+input rst_n,
 
 input  [WIDTH_CONFIG_ADDR-1:0]c_addr, 
 input  [WIDTH_CONFIG_DATA-1:0]c_data, 
@@ -33,8 +33,8 @@ reg [WIDTH_PARITY-1:0]parity_bit_reg, parity_bit_next;
 reg                   stop_bit_reg, stop_bit_next;
 reg                   c_ready_reg, c_ready_next;
 
-always @(posedge clk or posedge rst) begin
-	if(rst) begin
+always @(posedge clk or negedge rst_n) begin
+	if(~rst_n) begin
 		parity_bit_reg <= PARITYBIT_NONE;
 		stop_bit_reg   <= STOPBITS_1;
 		c_ready_reg    <= 1'b1;

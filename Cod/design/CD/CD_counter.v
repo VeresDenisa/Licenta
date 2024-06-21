@@ -5,21 +5,21 @@ This 32-bit counter has a limit input though which the maximum value is set.
 When the count reaches the limit value, the clkock changes.
 */
 
-`timescale 1 ns/1 ns
+
 
 module CD_counter
   #(`include "../PARAM/CD_params.v", 
    parameter WIDTH = CLK_MAX_WIDTH)
 (
-input             clk, rst, 
+input             clk, rst_n, 
 input [WIDTH-1:0] limit,
 output reg        clkout
 );
   
   reg [WIDTH-1:0] counter;
   
-  always@(posedge clk or posedge rst) begin
-    if(rst) begin 
+  always@(posedge clk or negedge rst_n) begin
+    if(~rst_n) begin 
 	    counter <= 'b0; 
 	    clkout <= 1'b0;
 	  end else begin

@@ -1,0 +1,5 @@
+#Start recording tcl command: 6/21/2024 04:05:23
+#Project Location: C:/Users/Denisa/Desktop/GITHUB/Incercari/Implementare/diamond; Project name: CS_project
+prj_project open "C:/Users/Denisa/Desktop/GITHUB/Incercari/Implementare/diamond/CS_project.ldf"
+pgr_project close
+#Stop recording: 6/21/2024 04:05:51
