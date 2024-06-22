@@ -23,9 +23,9 @@ endtask : pre_body
 task CONF_output_virtual_sequence::body();
     fork
         forever begin
-            p_sequencer.CONF_seqr.fifo.get(item);
+            p_sequencer.CONF_output_seqr.fifo.get(item);
             if(!(item.equalDefault())) begin
-                CONF_seq.start(p_sequencer.CONF_seqr);
+                CONF_seq.start(p_sequencer.CONF_output_seqr);
             end
         end
     join_none

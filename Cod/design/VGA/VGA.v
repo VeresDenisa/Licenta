@@ -58,14 +58,14 @@ module VGA
 					
 	
 	VGA_Counter CounterH(.clk(clk),
-					.rst_n(rst_n||Load_config),
+					.rst_n(rst_n&~Load_config),
 					.Sync_pulse(H_sync_pulse),
 					.Count_max(H_count_max), 
 					.Counter_sync(HSync),
 					.CounterP(Count_h));
 					
 	VGA_Counter CounterV(.clk(HSync),
-					.rst_n(rst_n||Load_config),
+					.rst_n(rst_n&~Load_config),
 					.Sync_pulse(V_sync_pulse),
 					.Count_max(V_count_max), 
 					.Counter_sync(VSync),

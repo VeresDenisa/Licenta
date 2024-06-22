@@ -40,7 +40,7 @@ endfunction : start_of_simulation_phase
 task CD_test::main_phase(uvm_phase phase);
     `uvm_info(get_name(), $sformatf("---> ENTER PHASE: --> MAIN <--"), UVM_DEBUG);
 
-    phase.phase_done.set_drain_time(this, `CLOCK * 1000);
+    phase.phase_done.set_drain_time(this, `CLOCK * 10000);
 
     phase.raise_objection(this);
     fork

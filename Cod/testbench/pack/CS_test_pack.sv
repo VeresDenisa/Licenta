@@ -9,5 +9,5 @@ package CS_test_pack;
 
     `define CLOCK 10
 
-    `include "testbench/CS/test/CS_test.svh"
+    `include "testbench/CS/test/test/CS_test.svh"
   endpackage : CS_test_pack

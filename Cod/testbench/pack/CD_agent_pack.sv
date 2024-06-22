@@ -13,10 +13,6 @@ package CD_agent_pack;
 
     `include "testbench/CD/test/environment/agent/CD_monitor.svh"
     `include "testbench/CD/test/environment/agent/CD_agent.svh"
-
-    `include "testbench/CM/test/environment/agent/CM_input_driver.svh"
-    `include "testbench/CM/test/environment/agent/CM_input_monitor.svh"
-    `include "testbench/CM/test/environment/agent/CM_input_agent.svh"
   endpackage : CD_agent_pack
 
 

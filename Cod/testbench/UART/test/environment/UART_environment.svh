@@ -45,7 +45,7 @@ function void UART_environment::build_phase(uvm_phase phase);
         CONF_config_h        = new(.is_active(UVM_ACTIVE));
             
         uvm_config_db #(agent_config)::set(this, "UART_output_agent_h*", "UART_config_db", UART_config_output_h);
-        uvm_config_db #(agent_config)::set(this, "CONF_agent_h*",        "UART_config_db", CONF_config_h);
+        uvm_config_db #(agent_config)::set(this, "CONF_agent_h*",        "CONF_config_db", CONF_config_h);
         
         UART_output_agent_h = UART_output_agent::type_id::create("UART_output_agent_h", this);
         CONF_agent_h        = CONF_input_agent::type_id::create("CONF_agent_h",      this);

@@ -29,6 +29,9 @@ function void LM_test::build_phase(uvm_phase phase);
 
     UART_output_seq = UART_output_sequence::type_id::create("UART_output_seq");
     CM_output_seq   = CM_output_sequence  ::type_id::create("CM_output_seq");
+
+    UART_output_seq.set_parameters(140);
+    CM_output_seq.set_parameters(140);
         
     `uvm_info(get_name(), $sformatf("<--- EXIT PHASE: --> BUILD <--"), UVM_DEBUG);
 endfunction : build_phase

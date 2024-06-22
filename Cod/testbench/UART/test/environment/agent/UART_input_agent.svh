@@ -3,7 +3,7 @@ class UART_input_agent extends uvm_agent;
     
     virtual UART_input_VIF i;
 
-    uvm_sequencer #(UART_input_item) seqr;
+    uvm_sequencer #(UART_input_frame) seqr;
     UART_input_driver    drv;
     UART_input_monitor   mon;
     
@@ -30,7 +30,7 @@ function void UART_input_agent::build_phase(uvm_phase phase);
         `uvm_fatal(this.get_name(), "Failed to get interface");
     
     if(UART_config_h.get_is_active() == UVM_ACTIVE) begin
-        seqr = uvm_sequencer#(UART_input_item)::type_id::create("UART_input_seqr", this);
+        seqr = uvm_sequencer#(UART_input_frame)::type_id::create("UART_input_seqr", this);
         drv  = UART_input_driver::type_id::create("UART_input_driver",  this); 
         uvm_config_db#(virtual UART_input_VIF)::set(this, "UART_input_driver*", "UART_input_VIF", i);
     end

@@ -32,7 +32,7 @@ task CONF_output_driver::reset_phase(uvm_phase phase);
     
     phase.raise_objection(this);
 
-    i.c_ready <= 'b0;
+    i.c_ready <= 'b1;
 
     @(i.driver);
     @(i.driver);

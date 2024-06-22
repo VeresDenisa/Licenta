@@ -2,6 +2,7 @@ import uvm_pkg::*;
 `include "uvm_macros.svh"
  
 import UART_test_pack::*;
+`include "assertion_UART.sv"
 
 `define CLOCK 10
 
@@ -31,6 +32,21 @@ module testbench_UART;
     CONF_input_VIF  CONF_input_i(clkinVGA);
     
     UART UART_DUT (
+        .clk(clk),
+        .rst_n(rst_n),
+        .clkinVGA(clkinVGA),
+        .in(UART_input_i.in),
+        .c_addr(CONF_input_i.c_addr),
+        .c_data(CONF_input_i.c_data),
+        .c_valid(CONF_input_i.c_valid),
+        .c_ready(CONF_input_i.c_ready),
+        .error(UART_output_i.error),
+        .valid_error(UART_output_i.valid_error),
+        .out(UART_output_i.out),
+        .valid_out(UART_output_i.valid_out)
+        );
+
+    bind testbench_UART.UART_DUT assertion_UART ass_UART (
         .clk(clk),
         .rst_n(rst_n),
         .clkinVGA(clkinVGA),

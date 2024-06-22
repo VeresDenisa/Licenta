@@ -6,6 +6,10 @@ class VGA_input_item extends uvm_sequence_item;
     function new(string name = "VGA_input_item");
         super.new(name);
     endfunction : new
+
+    constraint pseudo_random_values_3_0 { data_in[3:0] dist { 'h0 := 10, 'h5 := 10, 'hA := 10, 'hF := 10, ['h1:'h4] := 7, ['h4:'h9] := 7, ['hB:'hE] := 7 }; }
+    constraint pseudo_random_values_7_4 { data_in[7:4] dist { 'h0 := 10, 'h5 := 10, 'hA := 10, 'hF := 10, ['h1:'h4] := 7, ['h4:'h9] := 7, ['hB:'hE] := 7 }; }
+    constraint pseudo_random_values_11_8 { data_in[11:8] dist { 'h0 := 10, 'h5 := 10, 'hA := 10, 'hF := 10, ['h1:'h4] := 7, ['h4:'h9] := 7, ['hB:'hE] := 7 }; }
     
     extern function string convert2string(); 
 

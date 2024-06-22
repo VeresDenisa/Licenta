@@ -1,0 +1,52 @@
+Tabelul 1. Pașii de realizare a unui design digital
+Tabelul 2. Fazele UVM
+Tabelul 3. Nivelele de verbozitate în UVM
+Tabelul 4. Parametrii rezoluție 
+Tabelul 5. Intrările/Ieșirile sistemului
+Tabelul 6. Intrările/Ieșirile modulului Clock Divider
+Tabelul 7. Intrările/Ieșirile modulului Debouncers
+Tabelul 8. Intrările/Ieșirile modulului UART
+Tabelul 9. Codificarea parametrilor configurabili ai modulului UART
+Tabelul 10. Intrările/Ieșirile modulului Color Manager
+Tabelul 11. Descrierea cuvântului de comandă
+Tabelul 12. Codificarea modulelor configurabile
+Tabelul 13. Codificarea configurărilor
+Tabelul 14. Intrările/Ieșirile modulului VGA
+Tabelul 15. Intrările/Ieșirile modulului Led Manager
+Tabelul 16. Datele provenite de la modulul UART
+Tabelul 17. Datele provenite de la modulul CM
+Tabelul 18. Formatul LED-urilor în funcționarea normală
+Tabelul 19. Formatul LED-urilor în modul de depanare
+Tabelul 20. Valorile configurabile ale clock dividerului
+Tabelul 21. Format primit de la UART
+Tabelul 22. Formatul statusului de configurație
+Tabelul 23. Interfețele de verificare
+Tabelul 24. Teste UVM
+Tabelul 25. Fazele UVM ale agentului
+Tabelul 26. Covergroup CD
+Tabelul 27. Covergroup DB
+Tabelul 28. Covergroup CM
+Tabelul 29. Covergroup UART
+Tabelul 30. Covergroup VGA
+Tabelul 31. Covergroup LM
+Tabelul 32. Coverage final
+
+
+
+
+
+
+
+
+
+
+Tabelul 33. Aserții DB
+Tabelul 34. Aserții LM
+Tabelul 35. Aserții VGA
+Tabelul 36. Aserții UART
+
+
+
+
+
+

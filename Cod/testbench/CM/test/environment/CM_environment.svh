@@ -41,7 +41,7 @@ function void CM_environment::build_phase(uvm_phase phase);
             
         uvm_config_db #(agent_config)::set(this, "CM_input_agent_h*",  "CM_config_db", CM_config_input_h);
         uvm_config_db #(agent_config)::set(this, "CM_output_agent_h*", "CM_config_db", CM_config_output_h);
-        uvm_config_db #(agent_config)::set(this, "CONF_agent_h*",      "CM_config_db", CONF_config_h);
+        uvm_config_db #(agent_config)::set(this, "CONF_agent_h*",      "CONF_config_db", CONF_config_h);
         
         CM_input_agent_h  = CM_input_agent   ::type_id::create("CM_input_agent_h",  this);
         CM_output_agent_h = CM_output_agent  ::type_id::create("CM_output_agent_h", this);

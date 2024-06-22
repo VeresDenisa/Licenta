@@ -9,10 +9,10 @@
 set testlist {
      DB_test
      CM_test
-     CD_test
+     CD_test CD_test_no_config
      LM_test
-     UART_test
-     VGA_test
+     UART_test UART_test_no_config UART_test_error
+     VGA_test VGA_test_no_config VGA_test_no_data
      CS_test
 }
 
@@ -104,7 +104,7 @@ if { [info exists runtests] } {
           puts "[clock format [clock seconds] -format "%d/%m/%Y %H:%M:%S"] Finished coverage merge. Saving..."
 
           # save the coverage report as a txt file
-          exec sh -c "vsim -c -viewcov simulation/ucdb/ucdb_final.ucdb -do \"coverage report -file simulation/coverage/coverage_final.txt -byfile -detail -noannotate -option -cvg; quit -f; exit\""
+          exec sh -c "vsim -c -viewcov simulation/ucdb/ucdb_final.ucdb -do \"coverage report -file simulation/coverage/coverage_final_$unit.txt -byfile -detail -noannotate -option -cvg; quit -f; exit\""
 
           puts "[clock format [clock seconds] -format "%d/%m/%Y %H:%M:%S"] Saved final coverage report."
 

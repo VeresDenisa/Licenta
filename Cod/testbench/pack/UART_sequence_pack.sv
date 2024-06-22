@@ -7,5 +7,4 @@ package UART_sequence_pack;
     `include "testbench/CONF/test/sequence/CONF_input_sequence.svh"
 
     `include "testbench/UART/test/sequence/UART_input_sequence.svh"
-    `include "testbench/UART/test/sequence/UART_valid_sequence.svh"
   endpackage : UART_sequence_pack

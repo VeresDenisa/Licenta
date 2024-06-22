@@ -1,12 +1,7 @@
 class CS_test extends uvm_test;
     `uvm_component_utils(CS_test);
 
-    environment_config env_config;
-
-    UART_environment UART_env; 
-    DB_environment   DB_env; 
-    LM_environment   LM_env; 
-    VGA_environment  VGA_env; 
+    CS_environment CS_env; 
 
     UART_input_sequence UART_input_seq;
     DB_sequence DB_seq;
@@ -26,17 +21,7 @@ function void CS_test::build_phase(uvm_phase phase);
     super.build_phase(phase);
     `uvm_info(get_name(), $sformatf("---> ENTER PHASE: --> BUILD <--"), UVM_DEBUG);
 
-    env_config = new(.is_cluster(CLUSTER));
-
-    uvm_config_db #(environment_config)::set(this, "UART_env*", "CS_config_db", env_config);
-    uvm_config_db #(environment_config)::set(this, "DB_env*",   "CS_config_db", env_config);
-    uvm_config_db #(environment_config)::set(this, "LM_env*",   "CS_config_db", env_config);
-    uvm_config_db #(environment_config)::set(this, "VGA_env*",  "CS_config_db", env_config);
-
-    UART_env = UART_environment::type_id::create("UART_env", this); 
-    DB_env   = DB_environment  ::type_id::create("DB_env",   this); 
-    LM_env   = LM_environment  ::type_id::create("LM_env",   this); 
-    VGA_env  = VGA_environment ::type_id::create("VGA_env",  this); 
+    CS_env = CS_environment::type_id::create("CS_env", this); 
 
     UART_input_seq = UART_input_sequence::type_id::create("UART_input_seq");
     DB_seq         = DB_sequence        ::type_id::create("DB_seq");
@@ -53,7 +38,7 @@ endfunction : start_of_simulation_phase
 task CS_test::main_phase(uvm_phase phase);
     `uvm_info(get_name(), $sformatf("---> ENTER PHASE: --> MAIN <--"), UVM_DEBUG);
 
-    phase.phase_done.set_drain_time(this, `CLOCK * 100);
+    phase.phase_done.set_drain_time(this, `CLOCK * 1000);
 
     phase.raise_objection(this);
     fork

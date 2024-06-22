@@ -43,8 +43,8 @@ task CONF_output_monitor::run_phase(uvm_phase phase);
         if(!item.compare(item_prev) || !item.equalDefault()) begin
             `uvm_info(get_name(), $sformatf("Monitore an item."), UVM_MEDIUM);
             `uvm_info(get_name(), $sformatf("Monitore item: %s", item.convert2string), UVM_HIGH);
-            an_port.write(item);
         end
+        an_port.write(item);
         item_prev.copy(item);
     end : forever_monitor
     

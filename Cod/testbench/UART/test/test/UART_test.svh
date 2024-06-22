@@ -29,6 +29,8 @@ function void UART_test::build_phase(uvm_phase phase);
 
     v_seq          = CONF_input_virtual_sequence::type_id::create("v_seq");
     UART_input_seq = UART_input_sequence        ::type_id::create("UART_input_seq");
+
+    UART_input_seq.set_parameters(0, 0, 100);
         
     `uvm_info(get_name(), $sformatf("<--- EXIT PHASE: --> BUILD <--"), UVM_DEBUG);
 endfunction : build_phase
@@ -42,7 +44,7 @@ endfunction : start_of_simulation_phase
 task UART_test::main_phase(uvm_phase phase);
     `uvm_info(get_name(), $sformatf("---> ENTER PHASE: --> MAIN <--"), UVM_DEBUG);
 
-    phase.phase_done.set_drain_time(this, `CLOCK * 10);
+    phase.phase_done.set_drain_time(this, `CLOCK * 100);
 
     phase.raise_objection(this);
     fork

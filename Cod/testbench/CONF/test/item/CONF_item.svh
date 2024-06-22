@@ -9,6 +9,8 @@ class CONF_item extends uvm_sequence_item;
     function new(string name = "CONF_item");
         super.new(name);
     endfunction : new
+
+    constraint valid_UART_config { c_valid inside {1}; c_addr inside {'b0101, 'b0110, 'b0100, 'b1000}; }
     
     extern function string convert2string(); 
 
@@ -35,14 +37,14 @@ function void CONF_item::copy(CONF_item item);
 endfunction : copy
 
 function void CONF_item::setDefault();
-    this.c_ready = 'b0;
+    this.c_ready = 'b1;
     this.c_addr  = 'b0;
     this.c_data  = 'b0;
     this.c_valid = 'b0;
 endfunction : setDefault
 
 function bit CONF_item::equalDefault();
-    if(this.c_ready !== 'b0) return 1'b0;
+    if(this.c_ready !== 'b1) return 1'b0;
     if(this.c_addr  !== 'b0) return 1'b0;
     if(this.c_data  !== 'b0) return 1'b0;
     if(this.c_valid !== 'b0) return 1'b0;

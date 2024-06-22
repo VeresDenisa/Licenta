@@ -2,6 +2,7 @@ import uvm_pkg::*;
 `include "uvm_macros.svh"
  
 import VGA_test_pack::*;
+`include "assertion_VGA.sv"
 
 `define CLOCK 10
 
@@ -25,6 +26,22 @@ module testbench_VGA;
     CONF_input_VIF CONF_input_i(clk);
     
     VGA VGA_DUT (
+        .clk(clk),
+        .rst_n(rst_n),
+        .data_in(VGA_input_i.data_in),
+        .c_addr(CONF_input_i.c_addr),
+        .c_data(CONF_input_i.c_data),
+        .c_valid(CONF_input_i.c_valid),
+        .c_ready(CONF_input_i.c_ready),
+        .HSync(VGA_output_i.HSync),
+        .VSync(VGA_output_i.VSync),
+        .RED(VGA_output_i.RED),
+        .GREEN(VGA_output_i.GREEN),
+        .BLUE(VGA_output_i.BLUE)
+        );
+
+
+    bind testbench_VGA.VGA_DUT assertion_VGA ass_VGA (
         .clk(clk),
         .rst_n(rst_n),
         .data_in(VGA_input_i.data_in),

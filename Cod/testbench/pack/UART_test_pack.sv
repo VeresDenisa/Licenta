@@ -10,4 +10,6 @@ package UART_test_pack;
     `define CLOCK 10
   
     `include "testbench/UART/test/test/UART_test.svh"
+    `include "testbench/UART/test/test/UART_test_no_config.svh"
+    `include "testbench/UART/test/test/UART_test_error.svh"
   endpackage : UART_test_pack

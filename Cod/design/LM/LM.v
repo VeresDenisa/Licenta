@@ -45,6 +45,6 @@ LM_decoder #(.WIDTH(WIDTH_VGA_ERROR)) CM_error(.clk(clk), .rst_n(rst_n),
   .rd_data(CM_errors), .fifo_empty(CM_errors_valid), 
   .leds(leds_CM_error));
   
-assign leds = (~UART_data_debug_switch) ? {~rst_n, UART_data_debug_switch, leds_UART_error, leds_CM_error} : {leds_UART_info};
+assign leds = (~UART_data_debug_switch) ? {~rst_n, ~UART_data_debug_switch, leds_UART_error, leds_CM_error} : {leds_UART_info};
 
 endmodule

@@ -13,6 +13,7 @@ package item_pack;
 
     `include "testbench/LM/test/item/LM_item.svh"
 
+    `include "testbench/UART/test/item/UART_input_frame.svh"
     `include "testbench/UART/test/item/UART_input_item.svh"
     `include "testbench/UART/test/item/UART_output_item.svh"
     

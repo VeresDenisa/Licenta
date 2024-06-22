@@ -29,6 +29,8 @@ function void VGA_test::build_phase(uvm_phase phase);
 
     v_seq         = CONF_input_virtual_sequence::type_id::create("v_seq");
     VGA_input_seq = VGA_input_sequence         ::type_id::create("VGA_input_seq");
+
+    VGA_input_seq.set_parameters(200);
         
     `uvm_info(get_name(), $sformatf("<--- EXIT PHASE: --> BUILD <--"), UVM_DEBUG);
 endfunction : build_phase
@@ -42,7 +44,7 @@ endfunction : start_of_simulation_phase
 task VGA_test::main_phase(uvm_phase phase);
     `uvm_info(get_name(), $sformatf("---> ENTER PHASE: --> MAIN <--"), UVM_DEBUG);
 
-    phase.phase_done.set_drain_time(this, `CLOCK * 100);
+    phase.phase_done.set_drain_time(this, `CLOCK * 10);
 
     phase.raise_objection(this);
     fork

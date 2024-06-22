@@ -2,6 +2,8 @@ class UART_input_item extends uvm_sequence_item;
     `uvm_object_utils(UART_input_item);
 
     rand logic in;
+
+    constraint full_sync { in dist { 1'b0 := 50, 1'b1 := 50 }; }
     
     function new(string name = "UART_input_item");
         super.new(name);
