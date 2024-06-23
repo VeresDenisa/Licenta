@@ -2,7 +2,7 @@
 
 Codul sursă poate fi găsit la adresa: https://github.com/VeresDenisa/licenta_sistem_digital.
 
-Structură README.md:
+Structură fișier ReadME:
 - Cerințe sistem
 - Structură repository
 - Simularea sistemului
@@ -15,20 +15,24 @@ Structură README.md:
     - Folosirea aplicației PulseView
 - Precizări suplimentare
 
+
 ### Cerințe sistem
 * QuestaSim instalat - pentru compilarea și simularea designului și verificării (Linux)
 * ModelSim instalat - alternativă pentru compilarea și simularea designului (Windows)
 * Lattice Diamond instalat cu licență gratuită - pentru implementarea pe placă (Windows)
 * Serial Bluetooth Terminal instalat pe telefon - pentru comunicarea UART prin Bluetooth (Android)
 
+
 ### Structură repository
 Acest repository este format din:
+- images - designul sistemului digital și de verificare
 - source - codul sursă pentru design, verificare și rapoartele de verificare
     - design - codul sursă pentru design
     - testbench - codul sursă pentru verificare
     - simulation - rapoartele de verificare și formele de undă
 - modelsim - proiectul din modelsim
 - diamond - proiectul din diamond
+
 
 ### Simularea sistemului
 #### Proiect de design din ModelSim
@@ -39,6 +43,7 @@ Acest repository este format din:
     - add wave sim:/tb_CS/cs/*
     - run -all
 - se va deschide o fereastră - se alege varianta: No
+
 
 #### Proiect de verificare din Linux
 - se va deschide un terminal nou din ../source
@@ -62,6 +67,7 @@ Exemple:
 - fișierul raw de coverage individual sub denumirea ../source/simulation/ucdb/ucdb_NumeTest.ucdb
 - forma de undă individuală sub denumirea ../source/simulation/wave/wave_NumeTest.wlf
 
+
 #### Proiect de verificare din QuestaSim
 Pentru vizualizarea directă a rapoartelor de coverage și aserții în GUI trebuie rulate testele UVM din terminalul QuestaSim:
 - se deschide aplicația QuestaSim din terminalul deschis din folderul ../source (vsim)
@@ -72,6 +78,8 @@ Pentru vizualizarea directă a rapoartelor de coverage și aserții în GUI treb
 
 #### Vizualizarea formelor de undă
 Pentru vizualizarea formelor de undă formatate după rularea testelor se va scrie următoarea comandă în terminalul din ModelSim/QuestaSim: vsim -view wave_NumeTest.wlf -do wave_format_NumeTest.do
+În ../source/simulation/wave se află toate formatele formelor de undă.
+
 
 ### Proiect implementat FPGA
 #### Proiect implementat pe MachXO3D
@@ -82,6 +90,7 @@ Pentru vizualizarea formelor de undă formatate după rularea testelor se va scr
 - se detectează cablul de conexiune
 - se programează FPGA-ul
 
+
 #### Folosirea aplicației PulseView
 - se deschide aplicația open source PulseView
 - se conectează dispozitivul (Raspberry Pi Pico) și se detectează cablul
@@ -89,10 +98,11 @@ Pentru vizualizarea formelor de undă formatate după rularea testelor se va scr
 - se modifică frecvența și timpul de rulare
 - se conectează firele la semnalele care trebuie înregistrate
 
+
 ### Precizări suplimentare
 - modificarea numărului de obiecte pentru fiecare test este direct corelată cu timpul de rulare a testului;
 - ModelSim/QuestaSim se poate închide neașteptat, mai ales înainte de deschiderea formelor de undă;
 - durata unui test este ~1-5 minute;
 - atât în ModelSim, cât și în Diamond, fișierele de parametrii nu trebuie compilate / incluse în implementare;
 - în Diamond trebuie trecută frecvența de clock de intrare în analiza termică;
-- conexiunea firelor și a cablurilor trebuie verificate de mai multe ori.
+- conexiunea firelor și a cablurilor trebuie verificată de mai multe ori.
